@@ -1,0 +1,101 @@
+/*
+ * Style tweaks
+  * --------------------------------------------------
+   */
+html,
+body {
+  overflow-x: hidden; /* Prevent scroll on narrow devices */
+  font-size: 12px;
+}
+h1, h2, h3, h4, h5, h6{
+  margin-top:0px;
+}
+p {
+  font-size: 14px;
+}
+body {
+  padding-top: 30px;
+}
+footer {
+  padding: 30px 0;
+}
+.post {
+  text-align:justify;
+}
+.site-subtitle{
+  color:orange;
+}
+article header h3{
+  color: #82b548;
+  a{
+    color: #82b548;
+    footer {
+      text-align: right;
+    }
+  }
+}
+
+article footer{
+  padding: 0;
+  margin-top: 0;
+  padding-bottom:0;
+  text-align: right;
+}
+
+.entry-content{
+  text-align:justify;
+}
+.post-footer{
+  color: gray; 
+  text-align: right;
+}
+.line-separator{
+  border-top: 2px solid #e5e5e5;
+  clear: both;
+  display: block;
+  position: relative;
+  margin: 5px 0 10px;
+}
+.line-separator:after{
+  content: "";
+  height: 2px;
+  left: 0;
+  position: absolute;
+  top: -2px;
+  width: 100%;
+  background: -webkit-linear-gradient(left,#fff,#fff 3%,rgba(255,255,255,0) 10%,rgba(255,255,255,0) 90%,#fff 100%);
+}
+
+@media screen and (max-width: 767px) {
+  .row-offcanvas {
+    position: relative;
+    -webkit-transition: all 0.25s ease-out;
+    -moz-transition: all 0.25s ease-out;
+    transition: all 0.25s ease-out;
+  }
+
+  .row-offcanvas-right
+  .sidebar-offcanvas {
+    right: -50%; /* 6 columns */
+  }
+
+  .row-offcanvas-left
+  .sidebar-offcanvas {
+    left: -50%; /* 6 columns */
+  }
+
+  .row-offcanvas-right.active {
+    right: 50%; /* 6 columns */
+  }
+
+  .row-offcanvas-left.active {
+    left: 50%; /* 6 columns */
+  }
+
+  .sidebar-offcanvas {
+    position: absolute;
+    top: 0;
+    width: 50%; /* 6 columns */
+  }
+}
+
