@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Starging with a blog with octopress"
+title: "Starting with a blog with octopress"
 date: 2013-12-21 18:55:52 -0600
 comments: true
 categories:
