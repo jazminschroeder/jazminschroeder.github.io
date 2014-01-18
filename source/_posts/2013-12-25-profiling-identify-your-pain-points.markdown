@@ -38,12 +38,12 @@ Total: 0.000937
 Sort by: self_time
 
  %self      total      self      wait     child     calls  name
- 41.73      0.001     0.000     0.000     0.000      100   Kernel#p 
- 24.87      0.001     0.000     0.000     0.001        1   Integer#upto 
- 10.99      0.000     0.000     0.000     0.000       80   Kernel#inspect 
- 10.46      0.001     0.000     0.000     0.001        1   Global#[No method] 
- 7.90      0.000     0.000     0.000     0.000       80   Fixnum#to_s 
- 4.06      0.000     0.000     0.000     0.000       20   String#inspect 
+ 41.73      0.001     0.000     0.000     0.000      100   Kernel#p
+ 24.87      0.001     0.000     0.000     0.001        1   Integer#upto
+ 10.99      0.000     0.000     0.000     0.000       80   Kernel#inspect
+ 10.46      0.001     0.000     0.000     0.001        1   Global#[No method]
+ 7.90      0.000     0.000     0.000     0.000       80   Fixnum#to_s
+ 4.06      0.000     0.000     0.000     0.000       20   String#inspect
 
          * indicates recursively called methods
 {% endhighlight %}
