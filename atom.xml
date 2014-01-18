@@ -4,7 +4,7 @@
   <title><![CDATA[JazminSchroeder.github.io]]></title>
   <link href="http://jazminschroeder.github.io/atom.xml" rel="self"/>
   <link href="http://jazminschroeder.github.io/"/>
-  <updated>2013-12-30T16:05:35-06:00</updated>
+  <updated>2014-01-18T17:19:43-06:00</updated>
   <id>http://jazminschroeder.github.io/</id>
   <author>
     <name><![CDATA[Jazmin Schroeder]]></name>
@@ -12,6 +12,56 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[Berkshelf a vagrant plugin]]></title>
+    <link href="http://jazminschroeder.github.io/blog/2014/01/18/berkshelf-a-vagrant-plugin/"/>
+    <updated>2014-01-18T16:31:03-06:00</updated>
+    <id>http://jazminschroeder.github.io/blog/2014/01/18/berkshelf-a-vagrant-plugin</id>
+    <content type="html"><![CDATA[<p><a href="http://berkshelf.com/" target="_blank">Berkshelf</a> is a bundler-like dependency manger for Chef cookbook. <a href="https://github.com/berkshelf/vagrant-berkshelf">vagrant-berkshelf</a> is a Vagrant plugin to add Berkshelf integration to Chef provisioners to avoid the need to install cookbooks locally and have everything ready when you bring vagrant up.</p>
+
+<h3>How to use?</h3>
+
+<p>Install vagrant-berkshelf</p>
+
+<!-- more -->
+
+
+
+
+<div>
+  <pre><code class='ruby'>$ vagrant plugin install vagrant-berkshelf</code></pre>
+</div>
+
+
+<p>Enable it in Vagrantfile</p>
+
+<div>
+  <pre><code class='ruby'>Vagrant.configure(&quot;2&quot;) do |config|
+  ...
+  config.berkshelf.enabled = true
+  ...
+end</code></pre>
+</div>
+
+
+<p>Generate a Berksfile in the root of your project</p>
+
+<div>
+  <pre><code class='ruby'>site :opscode
+cookbook 'apt'
+cookbook 'build-essential'
+
+cookbook 'ruby_build', git: 'https://github.com/fnichol/chef-ruby_build.git'
+cookbook 'rbenv', git: 'https://github.com/fnichol/chef-rbenv.git'
+
+cookbook 'vim', path: './cookbooks/vim'</code></pre>
+</div>
+
+
+<h3>That&rsquo;s it! vagrant up</h3>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[Manage your cookbooks with librarian-chef]]></title>
@@ -110,12 +160,12 @@ Total: 0.000937
 Sort by: self_time
 
  %self      total      self      wait     child     calls  name
- 41.73      0.001     0.000     0.000     0.000      100   Kernel#p 
- 24.87      0.001     0.000     0.000     0.001        1   Integer#upto 
- 10.99      0.000     0.000     0.000     0.000       80   Kernel#inspect 
- 10.46      0.001     0.000     0.000     0.001        1   Global#[No method] 
- 7.90      0.000     0.000     0.000     0.000       80   Fixnum#to_s 
- 4.06      0.000     0.000     0.000     0.000       20   String#inspect 
+ 41.73      0.001     0.000     0.000     0.000      100   Kernel#p
+ 24.87      0.001     0.000     0.000     0.001        1   Integer#upto
+ 10.99      0.000     0.000     0.000     0.000       80   Kernel#inspect
+ 10.46      0.001     0.000     0.000     0.001        1   Global#[No method]
+ 7.90      0.000     0.000     0.000     0.000       80   Fixnum#to_s
+ 4.06      0.000     0.000     0.000     0.000       20   String#inspect
 
          * indicates recursively called methods</code></pre>
 </div>
@@ -136,6 +186,36 @@ Sort by: self_time
 <p>Octopress is a framework for Jekyll the blog static site generator powering Github Pages. If you enjoy working with the console then Octopress will feel very comfortable. There are a lot of resources out there to get you started with <a href="http://jekyllrb.com/" target="_blank">Jekyll</a> and github pages,  <a href="http://octopress.org" target="_blank">Octopress</a> just makes it dead simple to get up and running in no time and there are a lot of themes and plugins ready to use to make your blog your own.</p>
 
 <p>Use your favorite editor, commit to Github, deploy with a simple rake task and host your blog at Github for free. How can you go wrong with that?</p>
+
+<!-- more -->
+
+
+<h4>Everything you need is one rake away</h4>
+
+<div>
+  <pre><code class='ruby'>rake clean                     # Clean out caches: .pygments-cache, .gist-c...
+rake copydot[source,dest]      # copy dot files for deployment
+rake deploy                    # Default deploy task
+rake gen_deploy                # Generate website and deploy
+rake generate                  # Generate jekyll site
+rake install[theme]            # Initial setup for Octopress: copies the de...
+rake integrate                 # Move all stashed posts back into the posts...
+rake isolate[filename]         # Move all other posts than the one currentl...
+rake list                      # list tasks
+rake new_page[filename]        # Create a new page in source/(filename)/ind...
+rake new_post[title]           # Begin a new post in source/_posts
+rake preview                   # preview the site in a web browser
+rake push                      # deploy public directory to github pages
+rake rsync                     # Deploy website via rsync
+rake set_root_dir[dir]         # Update configurations to support publishin...
+rake setup_github_pages[repo]  # Set up _deploy folder and deploy branch fo...
+rake update_source[theme]      # Move source to source.old, install source ...
+rake update_style[theme]       # Move sass to sass.old, install sass theme ...
+rake watch                     # Watch the site and regenerate when it changes</code></pre>
+</div>
+
+
+
 ]]></content>
   </entry>
   

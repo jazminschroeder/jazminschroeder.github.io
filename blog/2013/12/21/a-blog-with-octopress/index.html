@@ -85,6 +85,36 @@
 <p>Octopress is a framework for Jekyll the blog static site generator powering Github Pages. If you enjoy working with the console then Octopress will feel very comfortable. There are a lot of resources out there to get you started with <a href="http://jekyllrb.com/" target="_blank">Jekyll</a> and github pages,  <a href="http://octopress.org" target="_blank">Octopress</a> just makes it dead simple to get up and running in no time and there are a lot of themes and plugins ready to use to make your blog your own.</p>
 
 <p>Use your favorite editor, commit to Github, deploy with a simple rake task and host your blog at Github for free. How can you go wrong with that?</p>
+
+<!-- more -->
+
+
+<h4>Everything you need is one rake away</h4>
+
+<div>
+  <pre><code class='ruby'>rake clean                     # Clean out caches: .pygments-cache, .gist-c...
+rake copydot[source,dest]      # copy dot files for deployment
+rake deploy                    # Default deploy task
+rake gen_deploy                # Generate website and deploy
+rake generate                  # Generate jekyll site
+rake install[theme]            # Initial setup for Octopress: copies the de...
+rake integrate                 # Move all stashed posts back into the posts...
+rake isolate[filename]         # Move all other posts than the one currentl...
+rake list                      # list tasks
+rake new_page[filename]        # Create a new page in source/(filename)/ind...
+rake new_post[title]           # Begin a new post in source/_posts
+rake preview                   # preview the site in a web browser
+rake push                      # deploy public directory to github pages
+rake rsync                     # Deploy website via rsync
+rake set_root_dir[dir]         # Update configurations to support publishin...
+rake setup_github_pages[repo]  # Set up _deploy folder and deploy branch fo...
+rake update_source[theme]      # Move source to source.old, install source ...
+rake update_style[theme]       # Move sass to sass.old, install sass theme ...
+rake watch                     # Watch the site and regenerate when it changes</code></pre>
+</div>
+
+
+
 </div>
 
 
@@ -147,6 +177,8 @@
   
   <div id="recent_posts" class="list-group">
     
+    <a class="list-group-item " href="/blog/2014/01/18/berkshelf-a-vagrant-plugin/">Berkshelf a Vagrant Plugin</a>
+    
     <a class="list-group-item " href="/blog/2013/12/29/manage-your-cookbooks-with-librarian-chef/">Manage Your Cookbooks With Librarian-chef</a>
     
     <a class="list-group-item " href="/blog/2013/12/25/profiling-identify-your-pain-points/">RubyProf: Identify Your Pain Points</a>
@@ -204,7 +236,7 @@
     </div>
     <footer role="contentinfo"><div class="container">
     <p class="text-muted credits">
-  Copyright &copy; 2013 - Jazmin Schroeder<br>
+  Copyright &copy; 2014 - Jazmin Schroeder<br>
   <small>
       <span class="credit">Powered by <a href="http://octopress.org">Octopress</a></span>,
       <span class="credit">customized with <a href="https://github.com/kAworu/octostrap3">octostrap3</a></span>.

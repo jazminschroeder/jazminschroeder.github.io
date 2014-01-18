@@ -4,7 +4,7 @@
 <!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
 <head>
   <meta charset="utf-8">
-  <title>Get in touch! - JazminSchroeder.github.io</title>
+  <title>Berkshelf a vagrant plugin - JazminSchroeder.github.io</title>
   <meta name="author" content="Jazmin Schroeder">
 
   
@@ -16,7 +16,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   
-  <link rel="canonical" href="http://jazminschroeder.github.io/contact-me">
+  <link rel="canonical" href="http://jazminschroeder.github.io/blog/2014/01/18/berkshelf-a-vagrant-plugin">
   <link href="/favicon.png" type="image/png" rel="icon">
   <link href="/atom.xml" rel="alternate" title="JazminSchroeder.github.io" type="application/atom+xml">
 
@@ -63,53 +63,135 @@
         <div id="content">
           <div class="row">
   <div class="page-content col-md-9">
-    <article role="article">
+    <article class="hentry" role="article">
       
-        <header>
+  <header>
+    
+      <p class="meta text-muted text-uppercase">
+        
+      </p>
+    
+    
+    <h3>
+        Berkshelf a Vagrant Plugin
+        
+    </h3>
+    
+  </header>
+
+
+<div class="entry-content clearfix"><p><a href="http://berkshelf.com/" target="_blank">Berkshelf</a> is a bundler-like dependency manger for Chef cookbook. <a href="https://github.com/berkshelf/vagrant-berkshelf">vagrant-berkshelf</a> is a Vagrant plugin to add Berkshelf integration to Chef provisioners to avoid the need to install cookbooks locally and have everything ready when you bring vagrant up.</p>
+
+<h3>How to use?</h3>
+
+<p>Install vagrant-berkshelf</p>
+
+<!-- more -->
+
+
+
+
+<div>
+  <pre><code class='ruby'>$ vagrant plugin install vagrant-berkshelf</code></pre>
+</div>
+
+
+<p>Enable it in Vagrantfile</p>
+
+<div>
+  <pre><code class='ruby'>Vagrant.configure(&quot;2&quot;) do |config|
+  ...
+  config.berkshelf.enabled = true
+  ...
+end</code></pre>
+</div>
+
+
+<p>Generate a Berksfile in the root of your project</p>
+
+<div>
+  <pre><code class='ruby'>site :opscode
+cookbook 'apt'
+cookbook 'build-essential'
+
+cookbook 'ruby_build', git: 'https://github.com/fnichol/chef-ruby_build.git'
+cookbook 'rbenv', git: 'https://github.com/fnichol/chef-rbenv.git'
+
+cookbook 'vim', path: './cookbooks/vim'</code></pre>
+</div>
+
+
+<h3>That&rsquo;s it! vagrant up</h3>
+</div>
+
+
+      <span class="line-separator"></span>
+      <footer>
+        <p class="meta text-muted">
           
+  
+
+<span class="glyphicon glyphicon-user"></span> <span class="byline author vcard">Posted by <span class="fn">Jazmin Schroeder</span></span>
+
           
-            <h2 class="entry-title">
-              Get in Touch!
-              
-            </h2>
+
+
+
+
+
+
+
+
+
+
+
+
+<span class="glyphicon glyphicon-calendar"></span> <time datetime="2014-01-18T16:31:03-06:00" pubdate data-updated="true">Jan 18<span>th</span>, 2014</time>
           
-        </header>
-      
-      <div class="entry-content">
-        <h3><a href="http://jazminschroeder@gmail.com" target="_blank">Gmail: jazminschroeder</a> </h3>
+
+<span class="glyphicon glyphicon-tags"></span>&nbsp;
+<span class="categories">
+  
+    <a class='category' href='/blog/categories/chef/'>chef</a>, <a class='category' href='/blog/categories/vagrant/'>vagrant,</a>
+  
+</span>
 
 
-<h3><a href="http://github.com/jazminschroeder" target="_blank">Github: jazminschroeder</a> </h3>
+        </p>
+        
+          <div class="sharing">
+  
+  <a href="//twitter.com/share" class="twitter-share-button" data-url="http://jazminschroeder.github.io/blog/2014/01/18/berkshelf-a-vagrant-plugin/" data-via="jazschroeder" data-counturl="http://jazminschroeder.github.io/blog/2014/01/18/berkshelf-a-vagrant-plugin/" >Tweet</a>
+  
+  
+  
+</div>
 
-
-<h3><a href="http://www.linkedin.com/in/jazminschroeder" target="_blank">LinkedIn: jazminschroeder</a> </h3>
-
-
-<h3><a href="https://twitter.com/JazSchroeder" target="_blank">Twitter: jazschroeder</a> </h3>
-
-
-      </div>
-      
-        <footer>
-          
-          
-        </footer>
-      
+        
+        
+          <ul class="meta text-muted pager">
+            
+            <li class="previous"><a href="/blog/2013/12/29/manage-your-cookbooks-with-librarian-chef/" title="Previous Post: Manage your cookbooks with librarian-chef">&laquo; Manage your cookbooks with librarian-chef</a></li>
+            
+            
+          </ul>
+        
+      </footer>
     </article>
     
   </div>
 
   
-    <aside class="sidebar col-md-3">
-      
-        <section class="panel panel-default">
+  <aside class="sidebar col-md-3">
+    
+      <section class="panel panel-default">
   <div class="panel-heading">
     <h3 class="panel-title">Recent Posts</h3>
   </div>
   
   <div id="recent_posts" class="list-group">
     
-    <a class="list-group-item " href="/blog/2014/01/18/berkshelf-a-vagrant-plugin/">Berkshelf a Vagrant Plugin</a>
+    <a class="list-group-item active" href="/blog/2014/01/18/berkshelf-a-vagrant-plugin/">Berkshelf a Vagrant Plugin</a>
     
     <a class="list-group-item " href="/blog/2013/12/29/manage-your-cookbooks-with-librarian-chef/">Manage Your Cookbooks With Librarian-chef</a>
     
@@ -158,8 +240,8 @@
 
 
 
-      
-    </aside>
+    
+  </aside>
   
 </div>
 

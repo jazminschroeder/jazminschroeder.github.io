@@ -2,19 +2,23 @@
 <urlset xmlns='http://www.sitemaps.org/schemas/sitemap/0.9'>
     <url>
         <loc>http://jazminschroeder.github.io/blog/2013/12/21/a-blog-with-octopress/</loc>
-        <lastmod>2013-12-25T18:14:08-06:00</lastmod>
+        <lastmod>2014-01-18T16:25:41-06:00</lastmod>
     </url>
     <url>
         <loc>
             http://jazminschroeder.github.io/blog/2013/12/25/profiling-identify-your-pain-points/
         </loc>
-        <lastmod>2013-12-25T18:47:41-06:00</lastmod>
+        <lastmod>2014-01-18T16:12:05-06:00</lastmod>
     </url>
     <url>
         <loc>
             http://jazminschroeder.github.io/blog/2013/12/29/manage-your-cookbooks-with-librarian-chef/
         </loc>
         <lastmod>2013-12-30T16:05:00-06:00</lastmod>
+    </url>
+    <url>
+        <loc>http://jazminschroeder.github.io/blog/2014/01/18/berkshelf-a-vagrant-plugin/</loc>
+        <lastmod>2014-01-18T17:19:07-06:00</lastmod>
     </url>
     <url>
         <loc>http://jazminschroeder.github.io/assets/bootstrap/about.html</loc>
@@ -38,7 +42,7 @@
     </url>
     <url>
         <loc>http://jazminschroeder.github.io/assets/bootstrap/</loc>
-        <lastmod>2013-12-30T16:05:00-06:00</lastmod>
+        <lastmod>2014-01-18T17:19:07-06:00</lastmod>
     </url>
     <url>
         <loc>http://jazminschroeder.github.io/assets/bootstrap/javascript.html</loc>
@@ -46,7 +50,7 @@
     </url>
     <url>
         <loc>http://jazminschroeder.github.io/blog/archives/</loc>
-        <lastmod>2013-12-30T16:05:00-06:00</lastmod>
+        <lastmod>2014-01-18T17:19:07-06:00</lastmod>
     </url>
     <url>
         <loc>http://jazminschroeder.github.io/contact-me/</loc>
@@ -54,7 +58,7 @@
     </url>
     <url>
         <loc>http://jazminschroeder.github.io/</loc>
-        <lastmod>2013-12-30T16:05:00-06:00</lastmod>
+        <lastmod>2014-01-18T17:19:07-06:00</lastmod>
     </url>
     <url>
         <loc>http://jazminschroeder.github.io/robots.txt</loc>
