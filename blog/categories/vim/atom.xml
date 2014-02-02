@@ -4,7 +4,7 @@
   <title><![CDATA[Category: vim | JazminSchroeder.github.io]]></title>
   <link href="http://jazminschroeder.github.io/blog/categories/vim/atom.xml" rel="self"/>
   <link href="http://jazminschroeder.github.io/"/>
-  <updated>2014-01-20T22:26:37-06:00</updated>
+  <updated>2014-02-01T19:01:20-06:00</updated>
   <id>http://jazminschroeder.github.io/</id>
   <author>
     <name><![CDATA[Jazmin Schroeder]]></name>
@@ -19,6 +19,13 @@
     <updated>2014-01-20T21:25:20-06:00</updated>
     <id>http://jazminschroeder.github.io/blog/2014/01/20/vimprotips</id>
     <content type="html"><![CDATA[<h4>One command at the time&hellip;</h4>
+
+<p>A collection of vim commands</p>
+
+<!-- more -->
+
+
+
 
 <table class="table">
   <thead>

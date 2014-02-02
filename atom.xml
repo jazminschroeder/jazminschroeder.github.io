@@ -4,7 +4,7 @@
   <title><![CDATA[JazminSchroeder.github.io]]></title>
   <link href="http://jazminschroeder.github.io/atom.xml" rel="self"/>
   <link href="http://jazminschroeder.github.io/"/>
-  <updated>2014-01-20T22:26:37-06:00</updated>
+  <updated>2014-02-01T19:01:20-06:00</updated>
   <id>http://jazminschroeder.github.io/</id>
   <author>
     <name><![CDATA[Jazmin Schroeder]]></name>
@@ -14,11 +14,56 @@
 
   
   <entry>
+    <title type="html"><![CDATA[Manage Tmux layouts with teamocil]]></title>
+    <link href="http://jazminschroeder.github.io/blog/2014/02/01/manage-tmux-layouts-with-teamocil/"/>
+    <updated>2014-02-01T12:47:36-06:00</updated>
+    <id>http://jazminschroeder.github.io/blog/2014/02/01/manage-tmux-layouts-with-teamocil</id>
+    <content type="html"><![CDATA[<p>Starting a tmux session? Open windows, panes, start services and more all with one  command. Meet  <a href="https://github.com/remiprev/teamocil" target="_blank">Teamocil</a></p>
+
+<h3>How to install teamocil?</h3>
+
+<div>
+  <pre><code class='ruby'>$ gem install teamocil</code></pre>
+</div>
+
+
+
+
+<!-- more -->
+
+
+<h3>How to create a teamocil layout?</h3>
+
+<script src="https://gist.github.com/jazminschroeder/8757578.js"></script>
+
+
+<h3>How to use my new layout?</h3>
+
+<div>
+  <pre><code class='ruby'>$ tmux
+$ teamocil my_layout --here</code></pre>
+</div>
+
+
+<h3>And&hellip;</h3>
+
+<p><img class="center" src="http://jazminschroeder.github.io/images/teamocil_my_layout.png" title="image" alt="images"></p>
+]]></content>
+  </entry>
+  
+  <entry>
     <title type="html"><![CDATA[Vim Protips]]></title>
     <link href="http://jazminschroeder.github.io/blog/2014/01/20/vimprotips/"/>
     <updated>2014-01-20T21:25:20-06:00</updated>
     <id>http://jazminschroeder.github.io/blog/2014/01/20/vimprotips</id>
     <content type="html"><![CDATA[<h4>One command at the time&hellip;</h4>
+
+<p>A collection of vim commands</p>
+
+<!-- more -->
+
+
+
 
 <table class="table">
   <thead>

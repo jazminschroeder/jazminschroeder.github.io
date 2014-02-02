@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: tmux | JazminSchroeder.github.io]]></title>
+  <link href="http://jazminschroeder.github.io/blog/categories/tmux/atom.xml" rel="self"/>
+  <link href="http://jazminschroeder.github.io/"/>
+  <updated>2014-02-01T19:01:20-06:00</updated>
+  <id>http://jazminschroeder.github.io/</id>
+  <author>
+    <name><![CDATA[Jazmin Schroeder]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[Manage Tmux layouts with teamocil]]></title>
+    <link href="http://jazminschroeder.github.io/blog/2014/02/01/manage-tmux-layouts-with-teamocil/"/>
+    <updated>2014-02-01T12:47:36-06:00</updated>
+    <id>http://jazminschroeder.github.io/blog/2014/02/01/manage-tmux-layouts-with-teamocil</id>
+    <content type="html"><![CDATA[<p>Starting a tmux session? Open windows, panes, start services and more all with one  command. Meet  <a href="https://github.com/remiprev/teamocil" target="_blank">Teamocil</a></p>
+
+<h3>How to install teamocil?</h3>
+
+<p><div>
+  <pre><code class='ruby'>$ gem install teamocil</code></pre>
+</div>
+</p>
+
+<!-- more -->
+
+
+<h3>How to create a teamocil layout?</h3>
+
+<script src="https://gist.github.com/jazminschroeder/8757578.js"></script>
+
+
+<h3>How to use my new layout?</h3>
+
+<p><div>
+  <pre><code class='ruby'>$ tmux
+$ teamocil my_layout &amp;mdash;here</code></pre>
+</div>
+</p>
+
+<h3>And&hellip;</h3>
+
+<p><img class="center" src="/images/teamocil_my_layout.png" title="&lsquo;image&rsquo; &lsquo;images&rsquo;" ></p>
+]]></content>
+  </entry>
+  
+</feed>
