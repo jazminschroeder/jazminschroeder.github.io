@@ -7,6 +7,8 @@ categories: vim
 ---
 
 #### One command at the time...
+A collection of vim commands
+<!-- more -->
 
 <table class="table">
   <thead>
