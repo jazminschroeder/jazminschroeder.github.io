@@ -31,6 +31,12 @@
         <lastmod>2014-02-01T19:00:36-06:00</lastmod>
     </url>
     <url>
+        <loc>
+            http://jazminschroeder.github.io/blog/2014/02/14/mongo-couldnt-connect-to-server-127-dot-0-0-dot-1-27017-at-src-slash-mongo-slash-shell-slash-mongo-dot-js-145/
+        </loc>
+        <lastmod>2014-02-14T14:23:25-06:00</lastmod>
+    </url>
+    <url>
         <loc>http://jazminschroeder.github.io/assets/bootstrap/about.html</loc>
         <lastmod>2013-12-23T16:19:25-06:00</lastmod>
     </url>
@@ -52,7 +58,7 @@
     </url>
     <url>
         <loc>http://jazminschroeder.github.io/assets/bootstrap/</loc>
-        <lastmod>2014-02-01T19:00:36-06:00</lastmod>
+        <lastmod>2014-02-14T14:23:25-06:00</lastmod>
     </url>
     <url>
         <loc>http://jazminschroeder.github.io/assets/bootstrap/javascript.html</loc>
@@ -60,7 +66,7 @@
     </url>
     <url>
         <loc>http://jazminschroeder.github.io/blog/archives/</loc>
-        <lastmod>2014-02-01T19:00:36-06:00</lastmod>
+        <lastmod>2014-02-14T14:23:25-06:00</lastmod>
     </url>
     <url>
         <loc>http://jazminschroeder.github.io/contact-me/</loc>
@@ -68,7 +74,7 @@
     </url>
     <url>
         <loc>http://jazminschroeder.github.io/</loc>
-        <lastmod>2014-02-01T19:00:36-06:00</lastmod>
+        <lastmod>2014-02-14T14:23:25-06:00</lastmod>
     </url>
     <url>
         <loc>http://jazminschroeder.github.io/robots.txt</loc>

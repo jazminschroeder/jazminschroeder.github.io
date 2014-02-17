@@ -4,7 +4,7 @@
   <title><![CDATA[JazminSchroeder.github.io]]></title>
   <link href="http://jazminschroeder.github.io/atom.xml" rel="self"/>
   <link href="http://jazminschroeder.github.io/"/>
-  <updated>2014-02-01T19:01:20-06:00</updated>
+  <updated>2014-02-16T20:43:10-06:00</updated>
   <id>http://jazminschroeder.github.io/</id>
   <author>
     <name><![CDATA[Jazmin Schroeder]]></name>
@@ -12,6 +12,23 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[Mongo: couldn't connect to server 127.0.0.1:27017 at src/mongo/shell/mongo.js:145]]></title>
+    <link href="http://jazminschroeder.github.io/blog/2014/02/14/mongo-couldnt-connect-to-server-127-dot-0-0-dot-1-27017-at-src-slash-mongo-slash-shell-slash-mongo-dot-js-145/"/>
+    <updated>2014-02-14T14:19:40-06:00</updated>
+    <id>http://jazminschroeder.github.io/blog/2014/02/14/mongo-couldnt-connect-to-server-127-dot-0-0-dot-1-27017-at-src-slash-mongo-slash-shell-slash-mongo-dot-js-145</id>
+    <content type="html"><![CDATA[<p>Problems with mongo lock?</p>
+
+<div>
+  <pre><code class='ruby'>$ sudo rm /var/lib/mongodb/mongod.lock
+$ sudo service mongodb restart</code></pre>
+</div>
+
+
+
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[Manage Tmux layouts with teamocil]]></title>
