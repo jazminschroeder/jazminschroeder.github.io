@@ -1,0 +1,27 @@
+---
+layout: post
+title: "neo4j-notes"
+date: 2014-02-25 09:52:28 -0600
+comments: true
+categories: neo4j
+---
+
+### Find number of nodes
+
+{% highlight ruby %}
+MATCH (n)
+RETURN count(*)
+as count;
+
++-------+
+| count |
++-------+
+| 3     |
++-------+
+
+{% endhighlight %}
+
+### Get all labels
+
+START n=node(*) RETURN labels(n)
+
