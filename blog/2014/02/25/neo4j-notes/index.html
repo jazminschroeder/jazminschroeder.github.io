@@ -4,7 +4,7 @@
 <!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
 <head>
   <meta charset="utf-8">
-  <title>Vim Protips - JazminSchroeder.github.io</title>
+  <title>neo4j-notes - JazminSchroeder.github.io</title>
   <meta name="author" content="Jazmin Schroeder">
 
   
@@ -16,7 +16,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   
-  <link rel="canonical" href="http://jazminschroeder.github.io/blog/2014/01/20/vimprotips">
+  <link rel="canonical" href="http://jazminschroeder.github.io/blog/2014/02/25/neo4j-notes">
   <link href="/favicon.png" type="image/png" rel="icon">
   <link href="/atom.xml" rel="alternate" title="JazminSchroeder.github.io" type="application/atom+xml">
 
@@ -73,53 +73,31 @@
     
     
     <h3>
-        Vim Protips
+        Neo4j-notes
         
     </h3>
     
   </header>
 
 
-<div class="entry-content clearfix"><h4>One command at the time&hellip;</h4>
+<div class="entry-content clearfix"><h3>Find number of nodes</h3>
 
-<p>A collection of vim commands</p>
+<div>
+  <pre><code class='ruby'>MATCH (n)
+RETURN count(*)
+as count;
 
-<!-- more -->
-
-
-
-
-<table class="table">
-  <thead>
-    <tr>
-      <th>Command</th>
-      <th>Description</th>
-    </tr>
-  </thead>
-  <tr>
-    <td>b</td>
-    <td>Go back a word </td>
-  </tr>
-  <tr>
-    <td>o</td>
-    <td>New line below </td>
-  </tr>
-  <tr>
-    <td>O</td>
-    <td>New line above </td>
-  </tr>
-  <tr>
-    <td>gg</td>
-    <td>Go to the first line</td>
-  </tr>
-  <tr>
-    <td>G</td>
-    <td>Go to the last line</td>
-  </tr>
-</table>
++-------+
+| count |
++-------+
+| 3     |
++-------+</code></pre>
+</div>
 
 
+<h3>Get all labels</h3>
 
+<p>START n=node(*) RETURN labels(n)</p>
 </div>
 
 
@@ -144,13 +122,13 @@
 
 
 
-<span class="glyphicon glyphicon-calendar"></span> <time datetime="2014-01-20T21:25:20-06:00" pubdate data-updated="true">Jan 20<span>th</span>, 2014</time>
+<span class="glyphicon glyphicon-calendar"></span> <time datetime="2014-02-25T09:52:28-06:00" pubdate data-updated="true">Feb 25<span>th</span>, 2014</time>
           
 
 <span class="glyphicon glyphicon-tags"></span>&nbsp;
 <span class="categories">
   
-    <a class='category' href='/blog/categories/vim/'>vim</a>
+    <a class='category' href='/blog/categories/neo4j/'>neo4j</a>
   
 </span>
 
@@ -159,7 +137,7 @@
         
           <div class="sharing">
   
-  <a href="//twitter.com/share" class="twitter-share-button" data-url="http://jazminschroeder.github.io/blog/2014/01/20/vimprotips/" data-via="jazschroeder" data-counturl="http://jazminschroeder.github.io/blog/2014/01/20/vimprotips/" >Tweet</a>
+  <a href="//twitter.com/share" class="twitter-share-button" data-url="http://jazminschroeder.github.io/blog/2014/02/25/neo4j-notes/" data-via="jazschroeder" data-counturl="http://jazminschroeder.github.io/blog/2014/02/25/neo4j-notes/" >Tweet</a>
   
   
   
@@ -169,10 +147,8 @@
         
           <ul class="meta text-muted pager">
             
-            <li class="previous"><a href="/blog/2014/01/18/berkshelf-a-vagrant-plugin/" title="Previous Post: Berkshelf a vagrant plugin">&laquo; Berkshelf a vagrant plugin</a></li>
+            <li class="previous"><a href="/blog/2014/02/14/mongo-couldnt-connect-to-server-127-dot-0-0-dot-1-27017-at-src-slash-mongo-slash-shell-slash-mongo-dot-js-145/" title="Previous Post: Mongo: couldn't connect to server 127.0.0.1:27017 at src/mongo/shell/mongo.js:145">&laquo; Mongo: couldn't connect to server 127.0.0.1:27017 at src/mongo/shell/mongo.js:145</a></li>
             
-            
-            <li class="next"><a href="/blog/2014/02/01/manage-tmux-layouts-with-teamocil/" title="Next Post: Manage Tmux layouts with teamocil">Manage Tmux layouts with teamocil &raquo;</a></li>
             
           </ul>
         
@@ -191,13 +167,13 @@
   
   <div id="recent_posts" class="list-group">
     
-    <a class="list-group-item " href="/blog/2014/02/25/neo4j-notes/">Neo4j-notes</a>
+    <a class="list-group-item active" href="/blog/2014/02/25/neo4j-notes/">Neo4j-notes</a>
     
     <a class="list-group-item " href="/blog/2014/02/14/mongo-couldnt-connect-to-server-127-dot-0-0-dot-1-27017-at-src-slash-mongo-slash-shell-slash-mongo-dot-js-145/">Mongo: Couldn't Connect to Server 127.0.0.1:27017 at src/mongo/shell/mongo.js:145</a>
     
     <a class="list-group-item " href="/blog/2014/02/01/manage-tmux-layouts-with-teamocil/">Manage Tmux Layouts With Teamocil</a>
     
-    <a class="list-group-item active" href="/blog/2014/01/20/vimprotips/">Vim Protips</a>
+    <a class="list-group-item " href="/blog/2014/01/20/vimprotips/">Vim Protips</a>
     
     <a class="list-group-item " href="/blog/2014/01/18/berkshelf-a-vagrant-plugin/">Berkshelf a Vagrant Plugin</a>
     

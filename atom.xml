@@ -4,7 +4,7 @@
   <title><![CDATA[JazminSchroeder.github.io]]></title>
   <link href="http://jazminschroeder.github.io/atom.xml" rel="self"/>
   <link href="http://jazminschroeder.github.io/"/>
-  <updated>2014-02-16T20:43:10-06:00</updated>
+  <updated>2014-02-26T22:15:47-06:00</updated>
   <id>http://jazminschroeder.github.io/</id>
   <author>
     <name><![CDATA[Jazmin Schroeder]]></name>
@@ -12,6 +12,32 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[neo4j-notes]]></title>
+    <link href="http://jazminschroeder.github.io/blog/2014/02/25/neo4j-notes/"/>
+    <updated>2014-02-25T09:52:28-06:00</updated>
+    <id>http://jazminschroeder.github.io/blog/2014/02/25/neo4j-notes</id>
+    <content type="html"><![CDATA[<h3>Find number of nodes</h3>
+
+<div>
+  <pre><code class='ruby'>MATCH (n)
+RETURN count(*)
+as count;
+
++-------+
+| count |
++-------+
+| 3     |
++-------+</code></pre>
+</div>
+
+
+<h3>Get all labels</h3>
+
+<p>START n=node(*) RETURN labels(n)</p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[Mongo: couldn't connect to server 127.0.0.1:27017 at src/mongo/shell/mongo.js:145]]></title>

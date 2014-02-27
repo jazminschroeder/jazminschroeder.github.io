@@ -75,6 +75,46 @@
       </p>
     
     
+      <h3><a href="/blog/2014/02/25/neo4j-notes/">Neo4j-notes</a></h3>
+    
+  </header>
+
+
+  <div class="entry-content"><h3>Find number of nodes</h3>
+
+<div>
+  <pre><code class='ruby'>MATCH (n)
+RETURN count(*)
+as count;
+
++-------+
+| count |
++-------+
+| 3     |
++-------+</code></pre>
+</div>
+
+
+<h3>Get all labels</h3>
+
+<p>START n=node(*) RETURN labels(n)</p>
+</div>
+  
+  
+
+
+        </article>
+      
+      
+        <article class="post">
+          
+  <header>
+    
+      <p class="meta text-muted text-uppercase">
+        
+      </p>
+    
+    
       <h3><a href="/blog/2014/02/14/mongo-couldnt-connect-to-server-127-dot-0-0-dot-1-27017-at-src-slash-mongo-slash-shell-slash-mongo-dot-js-145/">Mongo: Couldn&#8217;t Connect to Server 127.0.0.1:27017 at src/mongo/shell/mongo.js:145</a></h3>
     
   </header>
@@ -414,6 +454,8 @@ $ librarian-chef install</code></pre>
   
   <div id="recent_posts" class="list-group">
     
+    <a class="list-group-item " href="/blog/2014/02/25/neo4j-notes/">Neo4j-notes</a>
+    
     <a class="list-group-item " href="/blog/2014/02/14/mongo-couldnt-connect-to-server-127-dot-0-0-dot-1-27017-at-src-slash-mongo-slash-shell-slash-mongo-dot-js-145/">Mongo: Couldn&#8217;t Connect to Server 127.0.0.1:27017 at src/mongo/shell/mongo.js:145</a>
     
     <a class="list-group-item " href="/blog/2014/02/01/manage-tmux-layouts-with-teamocil/">Manage Tmux Layouts With Teamocil</a>
@@ -421,8 +463,6 @@ $ librarian-chef install</code></pre>
     <a class="list-group-item " href="/blog/2014/01/20/vimprotips/">Vim Protips</a>
     
     <a class="list-group-item " href="/blog/2014/01/18/berkshelf-a-vagrant-plugin/">Berkshelf a Vagrant Plugin</a>
-    
-    <a class="list-group-item " href="/blog/2013/12/29/manage-your-cookbooks-with-librarian-chef/">Manage Your Cookbooks With Librarian-chef</a>
     
   </div>
 </section>
