@@ -26,6 +26,12 @@
     </url>
     <url>
         <loc>
+            http://jazminschroeder.github.io/blog/2014/01/28/install-vim-plugins-as-submodules/
+        </loc>
+        <lastmod>2014-03-04T22:44:15-06:00</lastmod>
+    </url>
+    <url>
+        <loc>
             http://jazminschroeder.github.io/blog/2014/02/01/manage-tmux-layouts-with-teamocil/
         </loc>
         <lastmod>2014-02-01T19:00:36-06:00</lastmod>
@@ -62,7 +68,7 @@
     </url>
     <url>
         <loc>http://jazminschroeder.github.io/assets/bootstrap/</loc>
-        <lastmod>2014-02-26T22:15:42-06:00</lastmod>
+        <lastmod>2014-03-04T22:44:15-06:00</lastmod>
     </url>
     <url>
         <loc>http://jazminschroeder.github.io/assets/bootstrap/javascript.html</loc>
@@ -70,7 +76,7 @@
     </url>
     <url>
         <loc>http://jazminschroeder.github.io/blog/archives/</loc>
-        <lastmod>2014-02-26T22:15:42-06:00</lastmod>
+        <lastmod>2014-03-04T22:44:15-06:00</lastmod>
     </url>
     <url>
         <loc>http://jazminschroeder.github.io/contact-me/</loc>
@@ -78,7 +84,7 @@
     </url>
     <url>
         <loc>http://jazminschroeder.github.io/</loc>
-        <lastmod>2014-02-26T22:15:42-06:00</lastmod>
+        <lastmod>2014-03-04T22:44:15-06:00</lastmod>
     </url>
     <url>
         <loc>http://jazminschroeder.github.io/robots.txt</loc>

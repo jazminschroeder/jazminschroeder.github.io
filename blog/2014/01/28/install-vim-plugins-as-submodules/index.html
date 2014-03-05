@@ -4,7 +4,7 @@
 <!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
 <head>
   <meta charset="utf-8">
-  <title>Manage your cookbooks with librarian-chef - JazminSchroeder.github.io</title>
+  <title>Install vim plubins as submodules - JazminSchroeder.github.io</title>
   <meta name="author" content="Jazmin Schroeder">
 
   
@@ -16,7 +16,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   
-  <link rel="canonical" href="http://jazminschroeder.github.io/blog/2013/12/29/manage-your-cookbooks-with-librarian-chef">
+  <link rel="canonical" href="http://jazminschroeder.github.io/blog/2014/01/28/install-vim-plugins-as-submodules">
   <link href="/favicon.png" type="image/png" rel="icon">
   <link href="/atom.xml" rel="alternate" title="JazminSchroeder.github.io" type="application/atom+xml">
 
@@ -73,54 +73,23 @@
     
     
     <h3>
-        Manage Your Cookbooks With Librarian-chef
+        Install Vim Plubins as Submodules
         
     </h3>
     
   </header>
 
 
-<div class="entry-content clearfix"><p><a href="https://github.com/applicationsonline/librarian-chef" target="_blank">librarian-chef</a> is like a bundler for cookbooks. Manage your cookbooks and dependencies in a single file.</p>
-
-<h3>Here is how</h3>
-
-
-
-
-<div>
-  <pre><code class='ruby'>$ gem install librarian-chef
-$ librarian-chef init
-# edit the newly created Cheffile to add your cookbooks
-$ librarian-chef install</code></pre>
+<div class="entry-content clearfix"><div>
+  <pre><code class='ruby'>git submodule add http://https://github.com/tpope/vim-surround bundle/surround</code></pre>
 </div>
 
 
-<p>Cookboks listed in the Cheffile will be downloaded to the cookbooks folder, you will also noticed a Cheffile.lock is created locking the versions.</p>
-
-<!-- more -->
-
-
-
-
-<h3>Here is an example:</h3>
-
+<h3>Then</h3>
 
 <div>
-  <pre><code class='text'>#!/usr/bin/env ruby
-#^syntax detection
-
-site 'http://community.opscode.com/api/v1'
-cookbook 'apt'
-cookbook 'git'
-cookbook 'build-essential'
-cookbook 'tmux'
-
-# Include cookbooks from github 
-cookbook 'ruby_build', 
-          :git =&gt; 'https://github.com/fnichol/chef-ruby_build.git'
-cookbook 'rbenv',
-          :git =&gt; 'https://github.com/fnichol/chef-rbenv.git',
-          :ref =&gt; 'v0.7.2'</code></pre>
+  <pre><code class='ruby'>git submodule init
+git submodule update</code></pre>
 </div>
 
 
@@ -149,13 +118,13 @@ cookbook 'rbenv',
 
 
 
-<span class="glyphicon glyphicon-calendar"></span> <time datetime="2013-12-29T22:17:59-06:00" pubdate data-updated="true">Dec 29<span>th</span>, 2013</time>
+<span class="glyphicon glyphicon-calendar"></span> <time datetime="2014-01-28T23:24:38-06:00" pubdate data-updated="true">Jan 28<span>th</span>, 2014</time>
           
 
 <span class="glyphicon glyphicon-tags"></span>&nbsp;
 <span class="categories">
   
-    <a class='category' href='/blog/categories/chef/'>chef</a>
+    <a class='category' href='/blog/categories/vim/'>vim</a>
   
 </span>
 
@@ -164,7 +133,7 @@ cookbook 'rbenv',
         
           <div class="sharing">
   
-  <a href="//twitter.com/share" class="twitter-share-button" data-url="http://jazminschroeder.github.io/blog/2013/12/29/manage-your-cookbooks-with-librarian-chef/" data-via="jazschroeder" data-counturl="http://jazminschroeder.github.io/blog/2013/12/29/manage-your-cookbooks-with-librarian-chef/" >Tweet</a>
+  <a href="//twitter.com/share" class="twitter-share-button" data-url="http://jazminschroeder.github.io/blog/2014/01/28/install-vim-plugins-as-submodules/" data-via="jazschroeder" data-counturl="http://jazminschroeder.github.io/blog/2014/01/28/install-vim-plugins-as-submodules/" >Tweet</a>
   
   
   
@@ -174,10 +143,10 @@ cookbook 'rbenv',
         
           <ul class="meta text-muted pager">
             
-            <li class="previous"><a href="/blog/2013/12/25/profiling-identify-your-pain-points/" title="Previous Post: RubyProf: Identify your pain points">&laquo; RubyProf: Identify your pain points</a></li>
+            <li class="previous"><a href="/blog/2014/01/20/vimprotips/" title="Previous Post: Vim Protips">&laquo; Vim Protips</a></li>
             
             
-            <li class="next"><a href="/blog/2014/01/18/berkshelf-a-vagrant-plugin/" title="Next Post: Berkshelf a vagrant plugin">Berkshelf a vagrant plugin &raquo;</a></li>
+            <li class="next"><a href="/blog/2014/02/01/manage-tmux-layouts-with-teamocil/" title="Next Post: Manage Tmux layouts with teamocil">Manage Tmux layouts with teamocil &raquo;</a></li>
             
           </ul>
         
@@ -202,7 +171,7 @@ cookbook 'rbenv',
     
     <a class="list-group-item " href="/blog/2014/02/01/manage-tmux-layouts-with-teamocil/">Manage Tmux Layouts With Teamocil</a>
     
-    <a class="list-group-item " href="/blog/2014/01/28/install-vim-plugins-as-submodules/">Install Vim Plubins as Submodules</a>
+    <a class="list-group-item active" href="/blog/2014/01/28/install-vim-plugins-as-submodules/">Install Vim Plubins as Submodules</a>
     
     <a class="list-group-item " href="/blog/2014/01/20/vimprotips/">Vim Protips</a>
     

@@ -4,7 +4,7 @@
   <title><![CDATA[JazminSchroeder.github.io]]></title>
   <link href="http://jazminschroeder.github.io/atom.xml" rel="self"/>
   <link href="http://jazminschroeder.github.io/"/>
-  <updated>2014-02-26T22:15:47-06:00</updated>
+  <updated>2014-03-04T22:44:26-06:00</updated>
   <id>http://jazminschroeder.github.io/</id>
   <author>
     <name><![CDATA[Jazmin Schroeder]]></name>
@@ -91,6 +91,28 @@ $ teamocil my_layout --here</code></pre>
 <h3>And&hellip;</h3>
 
 <p><img class="center" src="http://jazminschroeder.github.io/images/teamocil_my_layout.png" title="image" alt="images"></p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Install vim plubins as submodules]]></title>
+    <link href="http://jazminschroeder.github.io/blog/2014/01/28/install-vim-plugins-as-submodules/"/>
+    <updated>2014-01-28T23:24:38-06:00</updated>
+    <id>http://jazminschroeder.github.io/blog/2014/01/28/install-vim-plugins-as-submodules</id>
+    <content type="html"><![CDATA[<div>
+  <pre><code class='ruby'>git submodule add http://https://github.com/tpope/vim-surround bundle/surround</code></pre>
+</div>
+
+
+<h3>Then</h3>
+
+<div>
+  <pre><code class='ruby'>git submodule init
+git submodule update</code></pre>
+</div>
+
+
+
 ]]></content>
   </entry>
   
