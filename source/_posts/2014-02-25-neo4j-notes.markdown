@@ -13,15 +13,11 @@ MATCH (n)
 RETURN count(*)
 as count;
 
-+-------+
-| count |
-+-------+
-| 3     |
-+-------+
-
 {% endhighlight %}
 
 ### Get all labels
 
+{% highlight ruby %}
 START n=node(*) RETURN labels(n)
+{% endhighlight %}
 
