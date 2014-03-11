@@ -75,6 +75,41 @@
       </p>
     
     
+      <h3><a href="/blog/2014/03/06/cucumber-scenario-outlines/">Cucumber Scenario Outlines</a></h3>
+    
+  </header>
+
+
+  <div class="entry-content"><div>
+  <pre><code class='ruby'>Scenario Outline: Table example
+ Given I have an &quot;&lt;option&gt;&quot;
+ Then I should see &quot;&lt;result&gt;&quot;
+
+ Examples:
+   | option   | result   |
+   | option 1 | result 1 |
+   | option 2 | result 2 |</code></pre>
+</div>
+
+
+
+</div>
+  
+  
+
+
+        </article>
+      
+      
+        <article class="post">
+          
+  <header>
+    
+      <p class="meta text-muted text-uppercase">
+        
+      </p>
+    
+    
       <h3><a href="/blog/2014/02/25/neo4j-notes/">Neo4j-notes</a></h3>
     
   </header>
@@ -85,19 +120,18 @@
 <div>
   <pre><code class='ruby'>MATCH (n)
 RETURN count(*)
-as count;
-
-+-------+
-| count |
-+-------+
-| 3     |
-+-------+</code></pre>
+as count;</code></pre>
 </div>
 
 
 <h3>Get all labels</h3>
 
-<p>START n=node(*) RETURN labels(n)</p>
+<div>
+  <pre><code class='ruby'>START n=node(*) RETURN labels(n)</code></pre>
+</div>
+
+
+
 </div>
   
   
@@ -203,16 +237,18 @@ $ sudo service mongodb restart</code></pre>
   </header>
 
 
-  <div class="entry-content"><div>
-  <pre><code class='ruby'>git submodule add http://https://github.com/tpope/vim-surround bundle/surround</code></pre>
+  <div class="entry-content"><h3>Step 1</h3>
+
+<div>
+  <pre><code class='ruby'>$ git submodule add http://https://github.com/tpope/vim-surround bundle/surround</code></pre>
 </div>
 
 
-<h3>Then</h3>
+<h3>Step 2</h3>
 
 <div>
-  <pre><code class='ruby'>git submodule init
-git submodule update</code></pre>
+  <pre><code class='ruby'>$ git submodule init
+$ git submodule update</code></pre>
 </div>
 
 
@@ -490,6 +526,8 @@ $ librarian-chef install</code></pre>
   
   <div id="recent_posts" class="list-group">
     
+    <a class="list-group-item " href="/blog/2014/03/06/cucumber-scenario-outlines/">Cucumber Scenario Outlines</a>
+    
     <a class="list-group-item " href="/blog/2014/02/25/neo4j-notes/">Neo4j-notes</a>
     
     <a class="list-group-item " href="/blog/2014/02/14/mongo-couldnt-connect-to-server-127-dot-0-0-dot-1-27017-at-src-slash-mongo-slash-shell-slash-mongo-dot-js-145/">Mongo: Couldn&#8217;t Connect to Server 127.0.0.1:27017 at src/mongo/shell/mongo.js:145</a>
@@ -497,8 +535,6 @@ $ librarian-chef install</code></pre>
     <a class="list-group-item " href="/blog/2014/02/01/manage-tmux-layouts-with-teamocil/">Manage Tmux Layouts With Teamocil</a>
     
     <a class="list-group-item " href="/blog/2014/01/28/install-vim-plugins-as-submodules/">Install Vim Plubins as Submodules</a>
-    
-    <a class="list-group-item " href="/blog/2014/01/20/vimprotips/">Vim Protips</a>
     
   </div>
 </section>

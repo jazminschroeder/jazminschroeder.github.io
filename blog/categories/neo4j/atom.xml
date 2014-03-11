@@ -4,7 +4,7 @@
   <title><![CDATA[Category: neo4j | JazminSchroeder.github.io]]></title>
   <link href="http://jazminschroeder.github.io/blog/categories/neo4j/atom.xml" rel="self"/>
   <link href="http://jazminschroeder.github.io/"/>
-  <updated>2014-03-04T22:44:26-06:00</updated>
+  <updated>2014-03-10T23:17:56-05:00</updated>
   <id>http://jazminschroeder.github.io/</id>
   <author>
     <name><![CDATA[Jazmin Schroeder]]></name>
@@ -25,19 +25,16 @@
 RETURN count(*)
 as count;&lt;/p&gt;
 
-&lt;p&gt;+&amp;mdash;&amp;mdash;&amp;mdash;&amp;ndash;+
-| count |
-+&amp;mdash;&amp;mdash;&amp;mdash;&amp;ndash;+
-| 3     |
-+&amp;mdash;&amp;mdash;&amp;mdash;&amp;ndash;+&lt;/p&gt;
-
 &lt;p&gt;</code></pre>
 </div>
 </p>
 
 <h3>Get all labels</h3>
 
-<p>START n=node(*) RETURN labels(n)</p>
+<p><div>
+  <pre><code class='ruby'>START n=node(*) RETURN labels(n)</code></pre>
+</div>
+</p>
 ]]></content>
   </entry>
   
