@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Install vim plubins as submodules"
+title: "Install vim plugins as submodules"
 date: 2014-01-28 23:24:38 -0600
 comments: true
 categories: vim
