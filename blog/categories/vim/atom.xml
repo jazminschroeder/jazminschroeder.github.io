@@ -4,7 +4,7 @@
   <title><![CDATA[Category: vim | JazminSchroeder.github.io]]></title>
   <link href="http://jazminschroeder.github.io/blog/categories/vim/atom.xml" rel="self"/>
   <link href="http://jazminschroeder.github.io/"/>
-  <updated>2014-03-10T23:17:56-05:00</updated>
+  <updated>2014-03-22T22:37:18-05:00</updated>
   <id>http://jazminschroeder.github.io/</id>
   <author>
     <name><![CDATA[Jazmin Schroeder]]></name>
@@ -14,7 +14,7 @@
 
   
   <entry>
-    <title type="html"><![CDATA[Install vim plubins as submodules]]></title>
+    <title type="html"><![CDATA[Install vim plugins as submodules]]></title>
     <link href="http://jazminschroeder.github.io/blog/2014/01/28/install-vim-plugins-as-submodules/"/>
     <updated>2014-01-28T23:24:38-06:00</updated>
     <id>http://jazminschroeder.github.io/blog/2014/01/28/install-vim-plugins-as-submodules</id>

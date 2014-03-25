@@ -4,7 +4,7 @@
   <title><![CDATA[JazminSchroeder.github.io]]></title>
   <link href="http://jazminschroeder.github.io/atom.xml" rel="self"/>
   <link href="http://jazminschroeder.github.io/"/>
-  <updated>2014-03-10T23:17:56-05:00</updated>
+  <updated>2014-03-22T22:37:18-05:00</updated>
   <id>http://jazminschroeder.github.io/</id>
   <author>
     <name><![CDATA[Jazmin Schroeder]]></name>
@@ -12,6 +12,23 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[Neo4J change default remote shell port]]></title>
+    <link href="http://jazminschroeder.github.io/blog/2014/03/22/neo4j-change-default-remote-shell-port/"/>
+    <updated>2014-03-22T22:34:11-05:00</updated>
+    <id>http://jazminschroeder.github.io/blog/2014/03/22/neo4j-change-default-remote-shell-port</id>
+    <content type="html"><![CDATA[<p>Neo4j remote shell port is 1337. How to change it?</p>
+
+<div>
+  <pre><code class='ruby'># /usr/local/neo4j-server/conf/neo4j.properties
+remote_shell_port = 1338</code></pre>
+</div>
+
+
+
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[Cucumber Scenario Outlines]]></title>
@@ -115,7 +132,7 @@ $ teamocil my_layout --here</code></pre>
   </entry>
   
   <entry>
-    <title type="html"><![CDATA[Install vim plubins as submodules]]></title>
+    <title type="html"><![CDATA[Install vim plugins as submodules]]></title>
     <link href="http://jazminschroeder.github.io/blog/2014/01/28/install-vim-plugins-as-submodules/"/>
     <updated>2014-01-28T23:24:38-06:00</updated>
     <id>http://jazminschroeder.github.io/blog/2014/01/28/install-vim-plugins-as-submodules</id>
