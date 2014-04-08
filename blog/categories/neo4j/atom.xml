@@ -4,7 +4,7 @@
   <title><![CDATA[Category: neo4j | JazminSchroeder.github.io]]></title>
   <link href="http://jazminschroeder.github.io/blog/categories/neo4j/atom.xml" rel="self"/>
   <link href="http://jazminschroeder.github.io/"/>
-  <updated>2014-03-22T22:37:18-05:00</updated>
+  <updated>2014-04-07T15:45:30-05:00</updated>
   <id>http://jazminschroeder.github.io/</id>
   <author>
     <name><![CDATA[Jazmin Schroeder]]></name>
@@ -18,7 +18,7 @@
     <link href="http://jazminschroeder.github.io/blog/2014/03/22/neo4j-change-default-remote-shell-port/"/>
     <updated>2014-03-22T22:34:11-05:00</updated>
     <id>http://jazminschroeder.github.io/blog/2014/03/22/neo4j-change-default-remote-shell-port</id>
-    <content type="html"><![CDATA[<p>Neo4j remote shell port is 1337. How to change it?</p>
+    <content type="html"><![CDATA[<p>Neo4j remote shell port defaults to 1337. How to change it?</p>
 
 <p><div>
   <pre><code class='ruby'>&lt;/p&gt;

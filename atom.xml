@@ -4,7 +4,7 @@
   <title><![CDATA[JazminSchroeder.github.io]]></title>
   <link href="http://jazminschroeder.github.io/atom.xml" rel="self"/>
   <link href="http://jazminschroeder.github.io/"/>
-  <updated>2014-03-22T22:37:18-05:00</updated>
+  <updated>2014-04-07T15:45:30-05:00</updated>
   <id>http://jazminschroeder.github.io/</id>
   <author>
     <name><![CDATA[Jazmin Schroeder]]></name>
@@ -14,11 +14,27 @@
 
   
   <entry>
+    <title type="html"><![CDATA[Mongo - list all collections]]></title>
+    <link href="http://jazminschroeder.github.io/blog/2014/04/07/mongo-list-all-collections/"/>
+    <updated>2014-04-07T15:40:23-05:00</updated>
+    <id>http://jazminschroeder.github.io/blog/2014/04/07/mongo-list-all-collections</id>
+    <content type="html"><![CDATA[<div>
+  <pre><code class='ruby'>&gt; show dbs
+&gt; use my_database
+&gt; show collections</code></pre>
+</div>
+
+
+
+]]></content>
+  </entry>
+  
+  <entry>
     <title type="html"><![CDATA[Neo4J change default remote shell port]]></title>
     <link href="http://jazminschroeder.github.io/blog/2014/03/22/neo4j-change-default-remote-shell-port/"/>
     <updated>2014-03-22T22:34:11-05:00</updated>
     <id>http://jazminschroeder.github.io/blog/2014/03/22/neo4j-change-default-remote-shell-port</id>
-    <content type="html"><![CDATA[<p>Neo4j remote shell port is 1337. How to change it?</p>
+    <content type="html"><![CDATA[<p>Neo4j remote shell port defaults to 1337. How to change it?</p>
 
 <div>
   <pre><code class='ruby'># /usr/local/neo4j-server/conf/neo4j.properties
