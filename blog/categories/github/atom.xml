@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: github | JazminSchroeder.github.io]]></title>
+  <link href="http://jazminschroeder.github.io/blog/categories/github/atom.xml" rel="self"/>
+  <link href="http://jazminschroeder.github.io/"/>
+  <updated>2014-04-11T16:07:48-05:00</updated>
+  <id>http://jazminschroeder.github.io/</id>
+  <author>
+    <name><![CDATA[Jazmin Schroeder]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[Syncing a fork]]></title>
+    <link href="http://jazminschroeder.github.io/blog/2014/04/11/syncing-a-fork-with-original-repo/"/>
+    <updated>2014-04-11T10:59:03-05:00</updated>
+    <id>http://jazminschroeder.github.io/blog/2014/04/11/syncing-a-fork-with-original-repo</id>
+    <content type="html"><![CDATA[<p><div>
+  <pre><code class='ruby'>&lt;/p&gt;
+
+&lt;h1&gt;Set a new remote for the orinal repository&lt;/h1&gt;
+
+&lt;p&gt;$ git remote add upstream git@github.com:jazminschroeder/repo.git&lt;/p&gt;
+
+&lt;h1&gt;fetch upstream&amp;rsquo;s branches&lt;/h1&gt;
+
+&lt;p&gt;$ git fetch upstream&lt;/p&gt;
+
+&lt;h1&gt;merge upstream&lt;/h1&gt;
+
+&lt;p&gt;$ git merge upstream/master&lt;/p&gt;
+
+&lt;p&gt;</code></pre>
+</div>
+</p>
+]]></content>
+  </entry>
+  
+</feed>

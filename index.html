@@ -75,6 +75,41 @@
       </p>
     
     
+      <h3><a href="/blog/2014/04/11/syncing-a-fork-with-original-repo/">Syncing a Fork</a></h3>
+    
+  </header>
+
+
+  <div class="entry-content"><div>
+  <pre><code class='ruby'>#Set a new remote for the orinal repository
+$ git remote add upstream git@github.com:jazminschroeder/repo.git
+
+#fetch upstream's branches
+$ git fetch upstream
+
+#merge upstream
+$ git merge upstream/master</code></pre>
+</div>
+
+
+
+</div>
+  
+  
+
+
+        </article>
+      
+      
+        <article class="post">
+          
+  <header>
+    
+      <p class="meta text-muted text-uppercase">
+        
+      </p>
+    
+    
       <h3><a href="/blog/2014/04/07/mongo-list-all-collections/">Mongo - List All Collections</a></h3>
     
   </header>
@@ -413,64 +448,6 @@ $ git submodule update</code></pre>
 
         </article>
       
-      
-        <article class="post">
-          
-  <header>
-    
-      <p class="meta text-muted text-uppercase">
-        
-      </p>
-    
-    
-      <h3><a href="/blog/2013/12/29/manage-your-cookbooks-with-librarian-chef/">Manage Your Cookbooks With Librarian-chef</a></h3>
-    
-  </header>
-
-
-  <div class="entry-content"><p><a href="https://github.com/applicationsonline/librarian-chef" target="_blank">librarian-chef</a> is like a bundler for cookbooks. Manage your cookbooks and dependencies in a single file.</p>
-
-<h3>Here is how</h3>
-
-
-
-
-<div>
-  <pre><code class='ruby'>$ gem install librarian-chef
-$ librarian-chef init
-# edit the newly created Cheffile to add your cookbooks
-$ librarian-chef install</code></pre>
-</div>
-
-
-<p>Cookboks listed in the Cheffile will be downloaded to the cookbooks folder, you will also noticed a Cheffile.lock is created locking the versions.</p>
-
-</div>
-  
-  
-    <footer>
-      <span class='line-separator'></span>
-      
-
-
-
-
-
-
-
-
-
-
-
-
-<span class="glyphicon glyphicon-calendar"></span> <time datetime="2013-12-29T22:17:59-06:00" pubdate data-updated="true">Dec 29<span>th</span>, 2013</time> | 
-      <a rel="full-article" href="/blog/2013/12/29/manage-your-cookbooks-with-librarian-chef/"> read more.. </a>
-    </footer>
-  
-
-
-        </article>
-      
 
     <ul class="pager">
       
@@ -495,6 +472,8 @@ $ librarian-chef install</code></pre>
   
   <div id="recent_posts" class="list-group">
     
+    <a class="list-group-item " href="/blog/2014/04/11/syncing-a-fork-with-original-repo/">Syncing a Fork</a>
+    
     <a class="list-group-item " href="/blog/2014/04/07/mongo-list-all-collections/">Mongo - List All Collections</a>
     
     <a class="list-group-item " href="/blog/2014/03/22/neo4j-change-default-remote-shell-port/">Neo4J Change Default Remote Shell Port</a>
@@ -502,8 +481,6 @@ $ librarian-chef install</code></pre>
     <a class="list-group-item " href="/blog/2014/03/06/cucumber-scenario-outlines/">Cucumber Scenario Outlines</a>
     
     <a class="list-group-item " href="/blog/2014/02/25/neo4j-notes/">Neo4j-notes</a>
-    
-    <a class="list-group-item " href="/blog/2014/02/14/mongo-couldnt-connect-to-server-127-dot-0-0-dot-1-27017-at-src-slash-mongo-slash-shell-slash-mongo-dot-js-145/">Mongo: Couldn&#8217;t Connect to Server 127.0.0.1:27017 at src/mongo/shell/mongo.js:145</a>
     
   </div>
 </section>
