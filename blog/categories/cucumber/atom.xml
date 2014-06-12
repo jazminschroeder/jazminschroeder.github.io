@@ -4,7 +4,7 @@
   <title><![CDATA[Category: cucumber | JazminSchroeder.github.io]]></title>
   <link href="http://jazminschroeder.github.io/blog/categories/cucumber/atom.xml" rel="self"/>
   <link href="http://jazminschroeder.github.io/"/>
-  <updated>2014-04-11T16:07:48-05:00</updated>
+  <updated>2014-06-11T22:35:01-05:00</updated>
   <id>http://jazminschroeder.github.io/</id>
   <author>
     <name><![CDATA[Jazmin Schroeder]]></name>
@@ -12,6 +12,23 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[Using tags with cucumber]]></title>
+    <link href="http://jazminschroeder.github.io/blog/2014/06/11/using-tags-with-cucumber/"/>
+    <updated>2014-06-11T22:32:53-05:00</updated>
+    <id>http://jazminschroeder.github.io/blog/2014/06/11/using-tags-with-cucumber</id>
+    <content type="html"><![CDATA[<p><div>
+  <pre><code class='ruby'>@mytag
+Scenario:&lt;/p&gt;
+
+&lt;p&gt;$ cucumber &amp;mdash;tags @mytag&lt;/p&gt;
+
+&lt;p&gt;</code></pre>
+</div>
+</p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[Cucumber Scenario Outlines]]></title>
