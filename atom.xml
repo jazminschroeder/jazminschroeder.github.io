@@ -4,7 +4,7 @@
   <title><![CDATA[JazminSchroeder.github.io]]></title>
   <link href="http://jazminschroeder.github.io/atom.xml" rel="self"/>
   <link href="http://jazminschroeder.github.io/"/>
-  <updated>2014-06-11T22:35:01-05:00</updated>
+  <updated>2015-01-10T10:31:13-06:00</updated>
   <id>http://jazminschroeder.github.io/</id>
   <author>
     <name><![CDATA[Jazmin Schroeder]]></name>
@@ -14,6 +14,39 @@
 
   
   <entry>
+    <title type="html"><![CDATA[RabbitMQ from the command line]]></title>
+    <link href="http://jazminschroeder.github.io/blog/2015/01/09/rabbitmq-from-the-command-line/"/>
+    <updated>2015-01-09T13:34:34-06:00</updated>
+    <id>http://jazminschroeder.github.io/blog/2015/01/09/rabbitmq-from-the-command-line</id>
+    <content type="html"><![CDATA[<p><a href="http://www.rabbitmq.com/man/rabbitmqctl.1.man.html">rabbitmqctl</a></p>
+
+<h3>List queues messages and consumers</h3>
+
+
+<div>
+  <pre><code class='ruby'>$ sudo rabbitmqctl list_queues name messages consumers
+
+Listing queues ...
+test.two.queue  0       0
+test.one.queue     0       0</code></pre>
+</div>
+
+
+
+
+<h3>List exchanges</h3>
+
+
+<div>
+  <pre><code class='ruby'>$ sudo rabbitmqctl list_exchanges</code></pre>
+</div>
+
+
+
+]]></content>
+  </entry>
+  
+  <entry>
     <title type="html"><![CDATA[Using tags with cucumber]]></title>
     <link href="http://jazminschroeder.github.io/blog/2014/06/11/using-tags-with-cucumber/"/>
     <updated>2014-06-11T22:32:53-05:00</updated>
@@ -21,7 +54,6 @@
     <content type="html"><![CDATA[<div>
   <pre><code class='ruby'>@mytag
 Scenario:
-
 
 $ cucumber --tags @mytag</code></pre>
 </div>
