@@ -4,7 +4,7 @@
   <title><![CDATA[Category: tmux | JazminSchroeder.github.io]]></title>
   <link href="http://jazminschroeder.github.io/blog/categories/tmux/atom.xml" rel="self"/>
   <link href="http://jazminschroeder.github.io/"/>
-  <updated>2015-01-10T10:31:13-06:00</updated>
+  <updated>2015-02-14T12:16:00-06:00</updated>
   <id>http://jazminschroeder.github.io/</id>
   <author>
     <name><![CDATA[Jazmin Schroeder]]></name>
@@ -12,6 +12,37 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[dyld: Library not loaded: /usr/local/lib/libevent-2.0.5.dylib]]></title>
+    <link href="http://jazminschroeder.github.io/blog/2015/02/14/dyld-library-not-loaded-slash-usr-slash-local-slash-lib-slash-libevent-2-dot-0-5-dot-dylib/"/>
+    <updated>2015-02-14T12:08:42-06:00</updated>
+    <id>http://jazminschroeder.github.io/blog/2015/02/14/dyld-library-not-loaded-slash-usr-slash-local-slash-lib-slash-libevent-2-dot-0-5-dot-dylib</id>
+    <content type="html"><![CDATA[<h3>Problems with tmux?</h3>
+
+
+<p><div>
+  <pre><code class='ruby'>$ tmux
+dyld: Library not loaded: /usr/local/lib/libevent-2.0.5.dylib&lt;/p&gt;
+
+&lt;h1&gt;Install libevent&lt;/h1&gt;
+
+&lt;p&gt;$ brew install libevent
+Warning: libevent-2.0.21 already installed&lt;/p&gt;
+
+&lt;h1&gt;Already intalled. Where is it?&lt;/h1&gt;
+
+&lt;p&gt;$brew link libevent
+Warning: Already linked: /usr/local/Cellar/libevent/2.0.21
+To relink: brew unlink libevent &amp;amp;&amp;amp; brew link libevent&lt;/p&gt;
+
+&lt;h1&gt;Relink it&lt;/h1&gt;
+
+&lt;p&gt;$brew unlink libevent &amp;amp;&amp;amp; brew link libevent</code></pre>
+</div>
+</p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[Manage Tmux layouts with teamocil]]></title>

@@ -75,6 +75,52 @@
       </p>
     
     
+      <h3><a href="/blog/2015/02/14/dyld-library-not-loaded-slash-usr-slash-local-slash-lib-slash-libevent-2-dot-0-5-dot-dylib/">Dyld: Library Not Loaded: /usr/local/lib/libevent-2.0.5.dylib</a></h3>
+    
+  </header>
+
+
+  <div class="entry-content"><h3>Problems with tmux?</h3>
+
+
+
+
+<div>
+  <pre><code class='ruby'>$ tmux
+dyld: Library not loaded: /usr/local/lib/libevent-2.0.5.dylib
+
+# Install libevent
+$ brew install libevent
+Warning: libevent-2.0.21 already installed
+
+# Already intalled. Where is it?
+$brew link libevent
+Warning: Already linked: /usr/local/Cellar/libevent/2.0.21
+To relink: brew unlink libevent &amp;&amp; brew link libevent
+
+# Relink it
+$brew unlink libevent &amp;&amp; brew link libevent</code></pre>
+</div>
+
+
+
+</div>
+  
+  
+
+
+        </article>
+      
+      
+        <article class="post">
+          
+  <header>
+    
+      <p class="meta text-muted text-uppercase">
+        
+      </p>
+    
+    
       <h3><a href="/blog/2015/01/09/rabbitmq-from-the-command-line/">RabbitMQ From the Command Line</a></h3>
     
   </header>
@@ -396,44 +442,6 @@ $ sudo service mongodb restart</code></pre>
 
         </article>
       
-      
-        <article class="post">
-          
-  <header>
-    
-      <p class="meta text-muted text-uppercase">
-        
-      </p>
-    
-    
-      <h3><a href="/blog/2014/01/28/install-vim-plugins-as-submodules/">Install Vim Plugins as Submodules</a></h3>
-    
-  </header>
-
-
-  <div class="entry-content"><h3>Step 1</h3>
-
-<div>
-  <pre><code class='ruby'>$ git submodule add http://https://github.com/tpope/vim-surround bundle/surround</code></pre>
-</div>
-
-
-<h3>Step 2</h3>
-
-<div>
-  <pre><code class='ruby'>$ git submodule init
-$ git submodule update</code></pre>
-</div>
-
-
-
-</div>
-  
-  
-
-
-        </article>
-      
 
     <ul class="pager">
       
@@ -458,6 +466,8 @@ $ git submodule update</code></pre>
   
   <div id="recent_posts" class="list-group">
     
+    <a class="list-group-item " href="/blog/2015/02/14/dyld-library-not-loaded-slash-usr-slash-local-slash-lib-slash-libevent-2-dot-0-5-dot-dylib/">Dyld: Library Not Loaded: /usr/local/lib/libevent-2.0.5.dylib</a>
+    
     <a class="list-group-item " href="/blog/2015/01/09/rabbitmq-from-the-command-line/">RabbitMQ From the Command Line</a>
     
     <a class="list-group-item " href="/blog/2014/06/11/using-tags-with-cucumber/">Using Tags With Cucumber</a>
@@ -465,8 +475,6 @@ $ git submodule update</code></pre>
     <a class="list-group-item " href="/blog/2014/04/11/syncing-a-fork-with-original-repo/">Syncing a Fork</a>
     
     <a class="list-group-item " href="/blog/2014/04/07/mongo-list-all-collections/">Mongo - List All Collections</a>
-    
-    <a class="list-group-item " href="/blog/2014/03/22/neo4j-change-default-remote-shell-port/">Neo4J Change Default Remote Shell Port</a>
     
   </div>
 </section>

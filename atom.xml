@@ -4,7 +4,7 @@
   <title><![CDATA[JazminSchroeder.github.io]]></title>
   <link href="http://jazminschroeder.github.io/atom.xml" rel="self"/>
   <link href="http://jazminschroeder.github.io/"/>
-  <updated>2015-01-10T10:31:13-06:00</updated>
+  <updated>2015-02-14T12:16:00-06:00</updated>
   <id>http://jazminschroeder.github.io/</id>
   <author>
     <name><![CDATA[Jazmin Schroeder]]></name>
@@ -12,6 +12,38 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[dyld: Library not loaded: /usr/local/lib/libevent-2.0.5.dylib]]></title>
+    <link href="http://jazminschroeder.github.io/blog/2015/02/14/dyld-library-not-loaded-slash-usr-slash-local-slash-lib-slash-libevent-2-dot-0-5-dot-dylib/"/>
+    <updated>2015-02-14T12:08:42-06:00</updated>
+    <id>http://jazminschroeder.github.io/blog/2015/02/14/dyld-library-not-loaded-slash-usr-slash-local-slash-lib-slash-libevent-2-dot-0-5-dot-dylib</id>
+    <content type="html"><![CDATA[<h3>Problems with tmux?</h3>
+
+
+
+
+<div>
+  <pre><code class='ruby'>$ tmux
+dyld: Library not loaded: /usr/local/lib/libevent-2.0.5.dylib
+
+# Install libevent
+$ brew install libevent
+Warning: libevent-2.0.21 already installed
+
+# Already intalled. Where is it?
+$brew link libevent
+Warning: Already linked: /usr/local/Cellar/libevent/2.0.21
+To relink: brew unlink libevent &amp;&amp; brew link libevent
+
+# Relink it
+$brew unlink libevent &amp;&amp; brew link libevent</code></pre>
+</div>
+
+
+
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[RabbitMQ from the command line]]></title>
