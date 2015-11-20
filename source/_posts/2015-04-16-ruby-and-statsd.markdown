@@ -7,7 +7,7 @@ categories: ruby statsd graphite
 ---
 
 
-<h3>Ruby and Statsd</h3>
+<h3>Graph everything</h3>
 
 [https://github.com/reinh/statsd](Using statsd-ruby gem)
 
