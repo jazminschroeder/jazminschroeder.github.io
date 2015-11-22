@@ -4,7 +4,7 @@
   <title><![CDATA[JazminSchroeder.github.io]]></title>
   <link href="http://jazminschroeder.github.io/atom.xml" rel="self"/>
   <link href="http://jazminschroeder.github.io/"/>
-  <updated>2015-02-14T12:16:00-06:00</updated>
+  <updated>2015-11-21T20:52:07-06:00</updated>
   <id>http://jazminschroeder.github.io/</id>
   <author>
     <name><![CDATA[Jazmin Schroeder]]></name>
@@ -12,6 +12,64 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[Mysql query from binary to uuid]]></title>
+    <link href="http://jazminschroeder.github.io/blog/2015/11/17/mysql-query-from-binary-to-uuid/"/>
+    <updated>2015-11-17T14:40:44-06:00</updated>
+    <id>http://jazminschroeder.github.io/blog/2015/11/17/mysql-query-from-binary-to-uuid</id>
+    <content type="html"><![CDATA[<h3>From binary to uuid</h3>
+
+
+
+
+<div>
+  <pre><code class='ruby'>SELECT
+  LOWER(
+    CONCAT(
+      LEFT(HEX(binary_field), 8),
+      &#39;-&#39;,
+      MID(HEX(binary_field), 9, 4),
+      &#39;-&#39;,
+      MID(HEX(binary_field), 13, 4),
+      &#39;-&#39;,
+      MID(HEX(binary_field), 17, 4),
+      &#39;-&#39;,
+      RIGHT(HEX(binary_field), 12)
+    )
+  ) AS uuid
+FROM some_table</code></pre>
+</div>
+
+
+
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Ruby and Statsd]]></title>
+    <link href="http://jazminschroeder.github.io/blog/2015/04/16/ruby-and-statsd/"/>
+    <updated>2015-04-16T15:40:44-05:00</updated>
+    <id>http://jazminschroeder.github.io/blog/2015/04/16/ruby-and-statsd</id>
+    <content type="html"><![CDATA[<h3>Graph everything</h3>
+
+
+<p><a href="Using%20statsd-ruby%20gem">https://github.com/reinh/statsd</a></p>
+
+<div>
+  <pre><code class='ruby'>require &#39;statsd&#39;
+
+statsd = Statsd.new(&#39;localhost&#39;, 9125)
+statsd.namespace=&quot;some.namespace&quot;
+
+#Sending data
+statsd.increment &#39;foo.bar&#39;</code></pre>
+</div>
+
+
+
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[dyld: Library not loaded: /usr/local/lib/libevent-2.0.5.dylib]]></title>
@@ -104,7 +162,7 @@ $ cucumber --tags @mytag</code></pre>
   <pre><code class='ruby'>#Set a new remote for the orinal repository
 $ git remote add upstream git@github.com:jazminschroeder/repo.git
 
-#fetch upstream's branches
+#fetch upstream&#39;s branches
 $ git fetch upstream
 
 #merge upstream
@@ -358,13 +416,13 @@ end</code></pre>
 
 <div>
   <pre><code class='ruby'>site :opscode
-cookbook 'apt'
-cookbook 'build-essential'
+cookbook &#39;apt&#39;
+cookbook &#39;build-essential&#39;
 
-cookbook 'ruby_build', git: 'https://github.com/fnichol/chef-ruby_build.git'
-cookbook 'rbenv', git: 'https://github.com/fnichol/chef-rbenv.git'
+cookbook &#39;ruby_build&#39;, git: &#39;https://github.com/fnichol/chef-ruby_build.git&#39;
+cookbook &#39;rbenv&#39;, git: &#39;https://github.com/fnichol/chef-rbenv.git&#39;
 
-cookbook 'vim', path: './cookbooks/vim'</code></pre>
+cookbook &#39;vim&#39;, path: &#39;./cookbooks/vim&#39;</code></pre>
 </div>
 
 
@@ -406,18 +464,18 @@ $ librarian-chef install</code></pre>
   <pre><code class='text'>#!/usr/bin/env ruby
 #^syntax detection
 
-site 'http://community.opscode.com/api/v1'
-cookbook 'apt'
-cookbook 'git'
-cookbook 'build-essential'
-cookbook 'tmux'
+site &#39;http://community.opscode.com/api/v1&#39;
+cookbook &#39;apt&#39;
+cookbook &#39;git&#39;
+cookbook &#39;build-essential&#39;
+cookbook &#39;tmux&#39;
 
 # Include cookbooks from github 
-cookbook 'ruby_build', 
-          :git =&gt; 'https://github.com/fnichol/chef-ruby_build.git'
-cookbook 'rbenv',
-          :git =&gt; 'https://github.com/fnichol/chef-rbenv.git',
-          :ref =&gt; 'v0.7.2'</code></pre>
+cookbook &#39;ruby_build&#39;, 
+          :git =&gt; &#39;https://github.com/fnichol/chef-ruby_build.git&#39;
+cookbook &#39;rbenv&#39;,
+          :git =&gt; &#39;https://github.com/fnichol/chef-rbenv.git&#39;,
+          :ref =&gt; &#39;v0.7.2&#39;</code></pre>
 </div>
 
 
@@ -443,12 +501,12 @@ cookbook 'rbenv',
 
 
 <div>
-  <pre><code class='ruby'>require 'ruby-prof'
+  <pre><code class='ruby'>require &#39;ruby-prof&#39;
 RubyProf.start
 
 1.upto(100) do |number|
   if number % 5 == 0
-    p 'Divider'
+    p &#39;Divider&#39;
   else
     p number
   end

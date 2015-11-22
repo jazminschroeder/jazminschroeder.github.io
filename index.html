@@ -75,6 +75,92 @@
       </p>
     
     
+      <h3><a href="/blog/2015/11/17/mysql-query-from-binary-to-uuid/">Mysql Query From Binary to Uuid</a></h3>
+    
+  </header>
+
+
+  <div class="entry-content"><h3>From binary to uuid</h3>
+
+
+
+
+<div>
+  <pre><code class='ruby'>SELECT
+  LOWER(
+    CONCAT(
+      LEFT(HEX(binary_field), 8),
+      &#39;-&#39;,
+      MID(HEX(binary_field), 9, 4),
+      &#39;-&#39;,
+      MID(HEX(binary_field), 13, 4),
+      &#39;-&#39;,
+      MID(HEX(binary_field), 17, 4),
+      &#39;-&#39;,
+      RIGHT(HEX(binary_field), 12)
+    )
+  ) AS uuid
+FROM some_table</code></pre>
+</div>
+
+
+
+</div>
+  
+  
+
+
+        </article>
+      
+      
+        <article class="post">
+          
+  <header>
+    
+      <p class="meta text-muted text-uppercase">
+        
+      </p>
+    
+    
+      <h3><a href="/blog/2015/04/16/ruby-and-statsd/">Ruby and Statsd</a></h3>
+    
+  </header>
+
+
+  <div class="entry-content"><h3>Graph everything</h3>
+
+
+<p><a href="Using%20statsd-ruby%20gem">https://github.com/reinh/statsd</a></p>
+
+<div>
+  <pre><code class='ruby'>require &#39;statsd&#39;
+
+statsd = Statsd.new(&#39;localhost&#39;, 9125)
+statsd.namespace=&quot;some.namespace&quot;
+
+#Sending data
+statsd.increment &#39;foo.bar&#39;</code></pre>
+</div>
+
+
+
+</div>
+  
+  
+
+
+        </article>
+      
+      
+        <article class="post">
+          
+  <header>
+    
+      <p class="meta text-muted text-uppercase">
+        
+      </p>
+    
+    
       <h3><a href="/blog/2015/02/14/dyld-library-not-loaded-slash-usr-slash-local-slash-lib-slash-libevent-2-dot-0-5-dot-dylib/">Dyld: Library Not Loaded: /usr/local/lib/libevent-2.0.5.dylib</a></h3>
     
   </header>
@@ -208,7 +294,7 @@ $ cucumber --tags @mytag</code></pre>
   <pre><code class='ruby'>#Set a new remote for the orinal repository
 $ git remote add upstream git@github.com:jazminschroeder/repo.git
 
-#fetch upstream's branches
+#fetch upstream&#39;s branches
 $ git fetch upstream
 
 #merge upstream
@@ -359,89 +445,6 @@ as count;</code></pre>
 
         </article>
       
-      
-        <article class="post">
-          
-  <header>
-    
-      <p class="meta text-muted text-uppercase">
-        
-      </p>
-    
-    
-      <h3><a href="/blog/2014/02/14/mongo-couldnt-connect-to-server-127-dot-0-0-dot-1-27017-at-src-slash-mongo-slash-shell-slash-mongo-dot-js-145/">Mongo: Couldn&#8217;t Connect to Server 127.0.0.1:27017 at src/mongo/shell/mongo.js:145</a></h3>
-    
-  </header>
-
-
-  <div class="entry-content"><p>Problems with mongo lock?</p>
-
-<div>
-  <pre><code class='ruby'>$ sudo rm /var/lib/mongodb/mongod.lock
-$ sudo service mongodb restart</code></pre>
-</div>
-
-
-
-</div>
-  
-  
-
-
-        </article>
-      
-      
-        <article class="post">
-          
-  <header>
-    
-      <p class="meta text-muted text-uppercase">
-        
-      </p>
-    
-    
-      <h3><a href="/blog/2014/02/01/manage-tmux-layouts-with-teamocil/">Manage Tmux Layouts With Teamocil</a></h3>
-    
-  </header>
-
-
-  <div class="entry-content"><p>Starting a tmux session? Open windows, panes, start services and more all with one  command. Meet  <a href="https://github.com/remiprev/teamocil" target="_blank">Teamocil</a></p>
-
-<h3>How to install teamocil?</h3>
-
-<div>
-  <pre><code class='ruby'>$ gem install teamocil</code></pre>
-</div>
-
-
-
-
-</div>
-  
-  
-    <footer>
-      <span class='line-separator'></span>
-      
-
-
-
-
-
-
-
-
-
-
-
-
-<span class="glyphicon glyphicon-calendar"></span> <time datetime="2014-02-01T12:47:36-06:00" pubdate data-updated="true">Feb 1<span>st</span>, 2014</time> | 
-      <a rel="full-article" href="/blog/2014/02/01/manage-tmux-layouts-with-teamocil/"> read more.. </a>
-    </footer>
-  
-
-
-        </article>
-      
 
     <ul class="pager">
       
@@ -466,15 +469,15 @@ $ sudo service mongodb restart</code></pre>
   
   <div id="recent_posts" class="list-group">
     
+    <a class="list-group-item " href="/blog/2015/11/17/mysql-query-from-binary-to-uuid/">Mysql Query From Binary to Uuid</a>
+    
+    <a class="list-group-item " href="/blog/2015/04/16/ruby-and-statsd/">Ruby and Statsd</a>
+    
     <a class="list-group-item " href="/blog/2015/02/14/dyld-library-not-loaded-slash-usr-slash-local-slash-lib-slash-libevent-2-dot-0-5-dot-dylib/">Dyld: Library Not Loaded: /usr/local/lib/libevent-2.0.5.dylib</a>
     
     <a class="list-group-item " href="/blog/2015/01/09/rabbitmq-from-the-command-line/">RabbitMQ From the Command Line</a>
     
     <a class="list-group-item " href="/blog/2014/06/11/using-tags-with-cucumber/">Using Tags With Cucumber</a>
-    
-    <a class="list-group-item " href="/blog/2014/04/11/syncing-a-fork-with-original-repo/">Syncing a Fork</a>
-    
-    <a class="list-group-item " href="/blog/2014/04/07/mongo-list-all-collections/">Mongo - List All Collections</a>
     
   </div>
 </section>

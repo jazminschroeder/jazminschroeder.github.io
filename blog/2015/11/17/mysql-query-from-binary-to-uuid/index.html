@@ -4,7 +4,7 @@
 <!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
 <head>
   <meta charset="utf-8">
-  <title>Using tags with cucumber - JazminSchroeder.github.io</title>
+  <title>Mysql query from binary to uuid - JazminSchroeder.github.io</title>
   <meta name="author" content="Jazmin Schroeder">
 
   
@@ -16,7 +16,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   
-  <link rel="canonical" href="http://jazminschroeder.github.io/blog/2014/06/11/using-tags-with-cucumber">
+  <link rel="canonical" href="http://jazminschroeder.github.io/blog/2015/11/17/mysql-query-from-binary-to-uuid">
   <link href="/favicon.png" type="image/png" rel="icon">
   <link href="/atom.xml" rel="alternate" title="JazminSchroeder.github.io" type="application/atom+xml">
 
@@ -73,18 +73,34 @@
     
     
     <h3>
-        Using Tags With Cucumber
+        Mysql Query From Binary to Uuid
         
     </h3>
     
   </header>
 
 
-<div class="entry-content clearfix"><div>
-  <pre><code class='ruby'>@mytag
-Scenario:
+<div class="entry-content clearfix"><h3>From binary to uuid</h3>
 
-$ cucumber --tags @mytag</code></pre>
+
+
+
+<div>
+  <pre><code class='ruby'>SELECT
+  LOWER(
+    CONCAT(
+      LEFT(HEX(binary_field), 8),
+      &#39;-&#39;,
+      MID(HEX(binary_field), 9, 4),
+      &#39;-&#39;,
+      MID(HEX(binary_field), 13, 4),
+      &#39;-&#39;,
+      MID(HEX(binary_field), 17, 4),
+      &#39;-&#39;,
+      RIGHT(HEX(binary_field), 12)
+    )
+  ) AS uuid
+FROM some_table</code></pre>
 </div>
 
 
@@ -113,13 +129,13 @@ $ cucumber --tags @mytag</code></pre>
 
 
 
-<span class="glyphicon glyphicon-calendar"></span> <time datetime="2014-06-11T22:32:53-05:00" pubdate data-updated="true">Jun 11<span>th</span>, 2014</time>
+<span class="glyphicon glyphicon-calendar"></span> <time datetime="2015-11-17T14:40:44-06:00" pubdate data-updated="true">Nov 17<span>th</span>, 2015</time>
           
 
 <span class="glyphicon glyphicon-tags"></span>&nbsp;
 <span class="categories">
   
-    <a class='category' href='/blog/categories/cucumber/'>cucumber</a>
+    <a class='category' href='/blog/categories/mysql/'>mysql</a>
   
 </span>
 
@@ -128,7 +144,7 @@ $ cucumber --tags @mytag</code></pre>
         
           <div class="sharing">
   
-  <a href="//twitter.com/share" class="twitter-share-button" data-url="http://jazminschroeder.github.io/blog/2014/06/11/using-tags-with-cucumber/" data-via="jazschroeder" data-counturl="http://jazminschroeder.github.io/blog/2014/06/11/using-tags-with-cucumber/" >Tweet</a>
+  <a href="//twitter.com/share" class="twitter-share-button" data-url="http://jazminschroeder.github.io/blog/2015/11/17/mysql-query-from-binary-to-uuid/" data-via="jazschroeder" data-counturl="http://jazminschroeder.github.io/blog/2015/11/17/mysql-query-from-binary-to-uuid/" >Tweet</a>
   
   
   
@@ -138,10 +154,8 @@ $ cucumber --tags @mytag</code></pre>
         
           <ul class="meta text-muted pager">
             
-            <li class="previous"><a href="/blog/2014/04/11/syncing-a-fork-with-original-repo/" title="Previous Post: Syncing a fork">&laquo; Syncing a fork</a></li>
+            <li class="previous"><a href="/blog/2015/04/16/ruby-and-statsd/" title="Previous Post: Ruby and Statsd">&laquo; Ruby and Statsd</a></li>
             
-            
-            <li class="next"><a href="/blog/2015/01/09/rabbitmq-from-the-command-line/" title="Next Post: RabbitMQ from the command line">RabbitMQ from the command line &raquo;</a></li>
             
           </ul>
         
@@ -160,7 +174,7 @@ $ cucumber --tags @mytag</code></pre>
   
   <div id="recent_posts" class="list-group">
     
-    <a class="list-group-item " href="/blog/2015/11/17/mysql-query-from-binary-to-uuid/">Mysql Query From Binary to Uuid</a>
+    <a class="list-group-item active" href="/blog/2015/11/17/mysql-query-from-binary-to-uuid/">Mysql Query From Binary to Uuid</a>
     
     <a class="list-group-item " href="/blog/2015/04/16/ruby-and-statsd/">Ruby and Statsd</a>
     
@@ -168,7 +182,7 @@ $ cucumber --tags @mytag</code></pre>
     
     <a class="list-group-item " href="/blog/2015/01/09/rabbitmq-from-the-command-line/">RabbitMQ From the Command Line</a>
     
-    <a class="list-group-item active" href="/blog/2014/06/11/using-tags-with-cucumber/">Using Tags With Cucumber</a>
+    <a class="list-group-item " href="/blog/2014/06/11/using-tags-with-cucumber/">Using Tags With Cucumber</a>
     
   </div>
 </section>

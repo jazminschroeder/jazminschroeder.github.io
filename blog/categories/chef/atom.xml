@@ -4,7 +4,7 @@
   <title><![CDATA[Category: chef | JazminSchroeder.github.io]]></title>
   <link href="http://jazminschroeder.github.io/blog/categories/chef/atom.xml" rel="self"/>
   <link href="http://jazminschroeder.github.io/"/>
-  <updated>2015-02-14T12:16:00-06:00</updated>
+  <updated>2015-11-21T20:52:07-06:00</updated>
   <id>http://jazminschroeder.github.io/</id>
   <author>
     <name><![CDATA[Jazmin Schroeder]]></name>
@@ -109,13 +109,13 @@ cookbook &amp;lsquo;tmux&amp;rsquo;&lt;/p&gt;
 
 &lt;p&gt;cookbook &amp;lsquo;ruby_build&amp;rsquo;,&lt;/p&gt;
 
-&lt;pre&gt;&lt;code&gt;      :git =&amp;gt; 'https://github.com/fnichol/chef-ruby_build.git'
+&lt;pre&gt;&lt;code&gt;      :git =&amp;gt; &#39;https://github.com/fnichol/chef-ruby_build.git&#39;
 &lt;/code&gt;&lt;/pre&gt;
 
 &lt;p&gt;cookbook &amp;lsquo;rbenv&amp;rsquo;,&lt;/p&gt;
 
-&lt;pre&gt;&lt;code&gt;      :git =&amp;gt; 'https://github.com/fnichol/chef-rbenv.git',
-      :ref =&amp;gt; 'v0.7.2'
+&lt;pre&gt;&lt;code&gt;      :git =&amp;gt; &#39;https://github.com/fnichol/chef-rbenv.git&#39;,
+      :ref =&amp;gt; &#39;v0.7.2&#39;
 &lt;/code&gt;&lt;/pre&gt;
 
 &lt;p&gt;</code></pre>

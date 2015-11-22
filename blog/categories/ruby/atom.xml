@@ -4,7 +4,7 @@
   <title><![CDATA[Category: ruby | JazminSchroeder.github.io]]></title>
   <link href="http://jazminschroeder.github.io/blog/categories/ruby/atom.xml" rel="self"/>
   <link href="http://jazminschroeder.github.io/"/>
-  <updated>2015-02-14T12:16:00-06:00</updated>
+  <updated>2015-11-21T20:52:07-06:00</updated>
   <id>http://jazminschroeder.github.io/</id>
   <author>
     <name><![CDATA[Jazmin Schroeder]]></name>
@@ -12,6 +12,30 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[Ruby and Statsd]]></title>
+    <link href="http://jazminschroeder.github.io/blog/2015/04/16/ruby-and-statsd/"/>
+    <updated>2015-04-16T15:40:44-05:00</updated>
+    <id>http://jazminschroeder.github.io/blog/2015/04/16/ruby-and-statsd</id>
+    <content type="html"><![CDATA[<h3>Graph everything</h3>
+
+
+<p><a href="Using%20statsd-ruby%20gem">https://github.com/reinh/statsd</a></p>
+
+<p><div>
+  <pre><code class='ruby'>require &amp;lsquo;statsd&amp;rsquo;&lt;/p&gt;
+
+&lt;p&gt;statsd = Statsd.new(&amp;lsquo;localhost&amp;rsquo;, 9125)
+statsd.namespace=&amp;ldquo;some.namespace&amp;rdquo;&lt;/p&gt;
+
+&lt;h1&gt;Sending data&lt;/h1&gt;
+
+&lt;p&gt;statsd.increment &amp;lsquo;foo.bar&amp;rsquo;</code></pre>
+</div>
+</p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[RubyProf: Identify your pain points]]></title>
@@ -37,7 +61,7 @@ RubyProf.start&lt;/p&gt;
 &lt;p&gt;1.upto(100) do |number|
   if number % 5 == 0&lt;/p&gt;
 
-&lt;pre&gt;&lt;code&gt;p 'Divider'
+&lt;pre&gt;&lt;code&gt;p &#39;Divider&#39;
 &lt;/code&gt;&lt;/pre&gt;
 
 &lt;p&gt;  else&lt;/p&gt;
