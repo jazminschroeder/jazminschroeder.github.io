@@ -75,6 +75,45 @@
       </p>
     
     
+      <h3><a href="/blog/2014/02/25/neo4j-notes/">Neo4j-notes</a></h3>
+    
+  </header>
+
+
+  <div class="entry-content"><h3>Find number of nodes</h3>
+
+<div>
+  <pre><code class='ruby'>MATCH (n)
+RETURN count(*)
+as count;</code></pre>
+</div>
+
+
+<h3>Get all labels</h3>
+
+<div>
+  <pre><code class='ruby'>START n=node(*) RETURN labels(n)</code></pre>
+</div>
+
+
+
+</div>
+  
+  
+
+
+        </article>
+      
+      
+        <article class="post">
+          
+  <header>
+    
+      <p class="meta text-muted text-uppercase">
+        
+      </p>
+    
+    
       <h3><a href="/blog/2014/02/14/mongo-couldnt-connect-to-server-127-dot-0-0-dot-1-27017-at-src-slash-mongo-slash-shell-slash-mongo-dot-js-145/">Mongo: Couldn&#8217;t Connect to Server 127.0.0.1:27017 at src/mongo/shell/mongo.js:145</a></h3>
     
   </header>
@@ -452,6 +491,8 @@ $ librarian-chef install</code></pre>
   
   <div id="recent_posts" class="list-group">
     
+    <a class="list-group-item " href="/blog/2015/11/29/hello-gopher/">Hello Gopher</a>
+    
     <a class="list-group-item " href="/blog/2015/11/17/mysql-query-from-binary-to-uuid/">Mysql Query From Binary to Uuid</a>
     
     <a class="list-group-item " href="/blog/2015/04/16/ruby-and-statsd/">Ruby and Statsd</a>
@@ -459,8 +500,6 @@ $ librarian-chef install</code></pre>
     <a class="list-group-item " href="/blog/2015/02/14/dyld-library-not-loaded-slash-usr-slash-local-slash-lib-slash-libevent-2-dot-0-5-dot-dylib/">Dyld: Library Not Loaded: /usr/local/lib/libevent-2.0.5.dylib</a>
     
     <a class="list-group-item " href="/blog/2015/01/09/rabbitmq-from-the-command-line/">RabbitMQ From the Command Line</a>
-    
-    <a class="list-group-item " href="/blog/2014/06/11/using-tags-with-cucumber/">Using Tags With Cucumber</a>
     
   </div>
 </section>

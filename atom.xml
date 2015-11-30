@@ -4,7 +4,7 @@
   <title><![CDATA[JazminSchroeder.github.io]]></title>
   <link href="http://jazminschroeder.github.io/atom.xml" rel="self"/>
   <link href="http://jazminschroeder.github.io/"/>
-  <updated>2015-11-21T20:52:07-06:00</updated>
+  <updated>2015-11-29T20:59:33-06:00</updated>
   <id>http://jazminschroeder.github.io/</id>
   <author>
     <name><![CDATA[Jazmin Schroeder]]></name>
@@ -12,6 +12,62 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[Hello Gopher]]></title>
+    <link href="http://jazminschroeder.github.io/blog/2015/11/29/hello-gopher/"/>
+    <updated>2015-11-29T12:33:02-06:00</updated>
+    <id>http://jazminschroeder.github.io/blog/2015/11/29/hello-gopher</id>
+    <content type="html"><![CDATA[<h4>Download and install</h4>
+
+<p>Download <a href="https://golang.org/dl/">Golang</a> and install it.</p>
+
+<h4>Create your workspace</h4>
+
+<div>
+  <pre><code class='ruby'>$ mkdir goprojects
+$ export GOPATH=$HOME/goprojects
+$ cd goprojects
+$ mkdir -p src/github.com/jazminschroeder
+$ cd src/github.com/jazminschroeder</code></pre>
+</div>
+
+
+<h4>Creating a project</h4>
+
+<div>
+  <pre><code class='ruby'>$ mkdir hello_gopher
+$ cd hello_gopher
+$ vim hello_gopher.go
+ 
+ # Hello gopher 
+ package main
+ import &quot;fmt&quot;
+
+ func main() {
+  fmt.Println(&quot;Hello gopher!!!&quot;)
+ }</code></pre>
+</div>
+
+
+<h4>Go install</h4>
+
+<div>
+  <pre><code class='ruby'>$ go install</code></pre>
+</div>
+
+
+<h4>Say hello gopher!</h4>
+
+<div>
+  <pre><code class='ruby'>$ ~/goprojects/bin/hello
+$ Hello gopher!!!</code></pre>
+</div>
+
+
+
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[Mysql query from binary to uuid]]></title>

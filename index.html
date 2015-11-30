@@ -75,6 +75,76 @@
       </p>
     
     
+      <h3><a href="/blog/2015/11/29/hello-gopher/">Hello Gopher</a></h3>
+    
+  </header>
+
+
+  <div class="entry-content"><h4>Download and install</h4>
+
+<p>Download <a href="https://golang.org/dl/">Golang</a> and install it.</p>
+
+<h4>Create your workspace</h4>
+
+<div>
+  <pre><code class='ruby'>$ mkdir goprojects
+$ export GOPATH=$HOME/goprojects
+$ cd goprojects
+$ mkdir -p src/github.com/jazminschroeder
+$ cd src/github.com/jazminschroeder</code></pre>
+</div>
+
+
+<h4>Creating a project</h4>
+
+<div>
+  <pre><code class='ruby'>$ mkdir hello_gopher
+$ cd hello_gopher
+$ vim hello_gopher.go
+ 
+ # Hello gopher 
+ package main
+ import &quot;fmt&quot;
+
+ func main() {
+  fmt.Println(&quot;Hello gopher!!!&quot;)
+ }</code></pre>
+</div>
+
+
+<h4>Go install</h4>
+
+<div>
+  <pre><code class='ruby'>$ go install</code></pre>
+</div>
+
+
+<h4>Say hello gopher!</h4>
+
+<div>
+  <pre><code class='ruby'>$ ~/goprojects/bin/hello
+$ Hello gopher!!!</code></pre>
+</div>
+
+
+
+</div>
+  
+  
+
+
+        </article>
+      
+      
+        <article class="post">
+          
+  <header>
+    
+      <p class="meta text-muted text-uppercase">
+        
+      </p>
+    
+    
       <h3><a href="/blog/2015/11/17/mysql-query-from-binary-to-uuid/">Mysql Query From Binary to Uuid</a></h3>
     
   </header>
@@ -406,45 +476,6 @@ remote_shell_port = 1338</code></pre>
 
         </article>
       
-      
-        <article class="post">
-          
-  <header>
-    
-      <p class="meta text-muted text-uppercase">
-        
-      </p>
-    
-    
-      <h3><a href="/blog/2014/02/25/neo4j-notes/">Neo4j-notes</a></h3>
-    
-  </header>
-
-
-  <div class="entry-content"><h3>Find number of nodes</h3>
-
-<div>
-  <pre><code class='ruby'>MATCH (n)
-RETURN count(*)
-as count;</code></pre>
-</div>
-
-
-<h3>Get all labels</h3>
-
-<div>
-  <pre><code class='ruby'>START n=node(*) RETURN labels(n)</code></pre>
-</div>
-
-
-
-</div>
-  
-  
-
-
-        </article>
-      
 
     <ul class="pager">
       
@@ -469,6 +500,8 @@ as count;</code></pre>
   
   <div id="recent_posts" class="list-group">
     
+    <a class="list-group-item " href="/blog/2015/11/29/hello-gopher/">Hello Gopher</a>
+    
     <a class="list-group-item " href="/blog/2015/11/17/mysql-query-from-binary-to-uuid/">Mysql Query From Binary to Uuid</a>
     
     <a class="list-group-item " href="/blog/2015/04/16/ruby-and-statsd/">Ruby and Statsd</a>
@@ -476,8 +509,6 @@ as count;</code></pre>
     <a class="list-group-item " href="/blog/2015/02/14/dyld-library-not-loaded-slash-usr-slash-local-slash-lib-slash-libevent-2-dot-0-5-dot-dylib/">Dyld: Library Not Loaded: /usr/local/lib/libevent-2.0.5.dylib</a>
     
     <a class="list-group-item " href="/blog/2015/01/09/rabbitmq-from-the-command-line/">RabbitMQ From the Command Line</a>
-    
-    <a class="list-group-item " href="/blog/2014/06/11/using-tags-with-cucumber/">Using Tags With Cucumber</a>
     
   </div>
 </section>
