@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: tmux | JazminSchroeder.github.io]]></title>
+  <link href="http://jazminschroeder.github.io/blog/categories/tmux/atom.xml" rel="self"/>
+  <link href="http://jazminschroeder.github.io/"/>
+  <updated>2015-11-29T20:59:33-06:00</updated>
+  <id>http://jazminschroeder.github.io/</id>
+  <author>
+    <name><![CDATA[Jazmin Schroeder]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[dyld: Library not loaded: /usr/local/lib/libevent-2.0.5.dylib]]></title>
+    <link href="http://jazminschroeder.github.io/blog/2015/02/14/dyld-library-not-loaded-slash-usr-slash-local-slash-lib-slash-libevent-2-dot-0-5-dot-dylib/"/>
+    <updated>2015-02-14T12:08:42-06:00</updated>
+    <id>http://jazminschroeder.github.io/blog/2015/02/14/dyld-library-not-loaded-slash-usr-slash-local-slash-lib-slash-libevent-2-dot-0-5-dot-dylib</id>
+    <content type="html"><![CDATA[<h3>Problems with tmux?</h3>
+
+
+<p><div>
+  <pre><code class='ruby'>$ tmux
+dyld: Library not loaded: /usr/local/lib/libevent-2.0.5.dylib&lt;/p&gt;
+
+&lt;h1&gt;Install libevent&lt;/h1&gt;
+
+&lt;p&gt;$ brew install libevent
+Warning: libevent-2.0.21 already installed&lt;/p&gt;
+
+&lt;h1&gt;Already intalled. Where is it?&lt;/h1&gt;
+
+&lt;p&gt;$brew link libevent
+Warning: Already linked: /usr/local/Cellar/libevent/2.0.21
+To relink: brew unlink libevent &amp;amp;&amp;amp; brew link libevent&lt;/p&gt;
+
+&lt;h1&gt;Relink it&lt;/h1&gt;
+
+&lt;p&gt;$brew unlink libevent &amp;amp;&amp;amp; brew link libevent</code></pre>
+</div>
+</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Manage Tmux layouts with teamocil]]></title>
+    <link href="http://jazminschroeder.github.io/blog/2014/02/01/manage-tmux-layouts-with-teamocil/"/>
+    <updated>2014-02-01T12:47:36-06:00</updated>
+    <id>http://jazminschroeder.github.io/blog/2014/02/01/manage-tmux-layouts-with-teamocil</id>
+    <content type="html"><![CDATA[<p>Starting a tmux session? Open windows, panes, start services and more all with one  command. Meet  <a href="https://github.com/remiprev/teamocil" target="_blank">Teamocil</a></p>
+
+<h3>How to install teamocil?</h3>
+
+<p><div>
+  <pre><code class='ruby'>$ gem install teamocil</code></pre>
+</div>
+</p>
+
+<!-- more -->
+
+
+<h3>How to create a teamocil layout?</h3>
+
+<script src="https://gist.github.com/jazminschroeder/8757578.js"></script>
+
+
+<h3>How to use my new layout?</h3>
+
+<p><div>
+  <pre><code class='ruby'>$ tmux
+$ teamocil my_layout &amp;mdash;here</code></pre>
+</div>
+</p>
+
+<h3>And&hellip;</h3>
+
+<p><img class="center" src="/images/teamocil_my_layout.png" title="&lsquo;image&rsquo; &lsquo;images&rsquo;" ></p>
+]]></content>
+  </entry>
+  
+</feed>

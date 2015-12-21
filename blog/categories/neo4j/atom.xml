@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: neo4j | JazminSchroeder.github.io]]></title>
+  <link href="http://jazminschroeder.github.io/blog/categories/neo4j/atom.xml" rel="self"/>
+  <link href="http://jazminschroeder.github.io/"/>
+  <updated>2015-11-29T20:59:33-06:00</updated>
+  <id>http://jazminschroeder.github.io/</id>
+  <author>
+    <name><![CDATA[Jazmin Schroeder]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[Neo4J change default remote shell port]]></title>
+    <link href="http://jazminschroeder.github.io/blog/2014/03/22/neo4j-change-default-remote-shell-port/"/>
+    <updated>2014-03-22T22:34:11-05:00</updated>
+    <id>http://jazminschroeder.github.io/blog/2014/03/22/neo4j-change-default-remote-shell-port</id>
+    <content type="html"><![CDATA[<p>Neo4j remote shell port defaults to 1337. How to change it?</p>
+
+<p><div>
+  <pre><code class='ruby'>&lt;/p&gt;
+
+&lt;h1&gt;/usr/local/neo4j-server/conf/neo4j.properties&lt;/h1&gt;
+
+&lt;p&gt;remote_shell_port = 1338</code></pre>
+</div>
+</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[neo4j-notes]]></title>
+    <link href="http://jazminschroeder.github.io/blog/2014/02/25/neo4j-notes/"/>
+    <updated>2014-02-25T09:52:28-06:00</updated>
+    <id>http://jazminschroeder.github.io/blog/2014/02/25/neo4j-notes</id>
+    <content type="html"><![CDATA[<h3>Find number of nodes</h3>
+
+<p><div>
+  <pre><code class='ruby'>MATCH (n)
+RETURN count(*)
+as count;&lt;/p&gt;
+
+&lt;p&gt;</code></pre>
+</div>
+</p>
+
+<h3>Get all labels</h3>
+
+<p><div>
+  <pre><code class='ruby'>START n=node(*) RETURN labels(n)</code></pre>
+</div>
+</p>
+]]></content>
+  </entry>
+  
+</feed>

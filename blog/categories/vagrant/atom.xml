@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: vagrant, | JazminSchroeder.github.io]]></title>
+  <link href="http://jazminschroeder.github.io/blog/categories/vagrant/atom.xml" rel="self"/>
+  <link href="http://jazminschroeder.github.io/"/>
+  <updated>2015-11-29T20:59:33-06:00</updated>
+  <id>http://jazminschroeder.github.io/</id>
+  <author>
+    <name><![CDATA[Jazmin Schroeder]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[Berkshelf a vagrant plugin]]></title>
+    <link href="http://jazminschroeder.github.io/blog/2014/01/18/berkshelf-a-vagrant-plugin/"/>
+    <updated>2014-01-18T16:31:03-06:00</updated>
+    <id>http://jazminschroeder.github.io/blog/2014/01/18/berkshelf-a-vagrant-plugin</id>
+    <content type="html"><![CDATA[<p><a href="http://berkshelf.com/" target="_blank">Berkshelf</a> is a bundler-like dependency manger for Chef cookbook. <a href="https://github.com/berkshelf/vagrant-berkshelf">vagrant-berkshelf</a> is a Vagrant plugin to add Berkshelf integration to Chef provisioners to avoid the need to install cookbooks locally and have everything ready when you bring vagrant up.</p>
+
+<h3>How to use?</h3>
+
+<p>Install vagrant-berkshelf</p>
+
+<!-- more -->
+
+
+<p><div>
+  <pre><code class='ruby'>$ vagrant plugin install vagrant-berkshelf</code></pre>
+</div>
+</p>
+
+<p>Enable it in Vagrantfile
+<div>
+  <pre><code class='ruby'>Vagrant.configure(&amp;ldquo;2&amp;rdquo;) do |config|
+  &amp;hellip;
+  config.berkshelf.enabled = true
+  &amp;hellip;
+end</code></pre>
+</div>
+</p>
+
+<p>Generate a Berksfile in the root of your project</p>
+
+<p><div>
+  <pre><code class='ruby'>site :opscode
+cookbook &amp;lsquo;apt&amp;rsquo;
+cookbook &amp;lsquo;build-essential&amp;rsquo;&lt;/p&gt;
+
+&lt;p&gt;cookbook &amp;lsquo;ruby_build&amp;rsquo;, git: &amp;lsquo;&lt;a href=&quot;https://github.com/fnichol/chef-ruby_build.git&quot;&gt;https://github.com/fnichol/chef-ruby_build.git&lt;/a&gt;&amp;rsquo;
+cookbook &amp;lsquo;rbenv&amp;rsquo;, git: &amp;lsquo;&lt;a href=&quot;https://github.com/fnichol/chef-rbenv.git&quot;&gt;https://github.com/fnichol/chef-rbenv.git&lt;/a&gt;&amp;rsquo;&lt;/p&gt;
+
+&lt;p&gt;cookbook &amp;lsquo;vim&amp;rsquo;, path: &amp;lsquo;./cookbooks/vim&amp;rsquo;&lt;/p&gt;
+
+&lt;p&gt;</code></pre>
+</div>
+</p>
+
+<h3>That&rsquo;s it! vagrant up</h3>
+]]></content>
+  </entry>
+  
+</feed>

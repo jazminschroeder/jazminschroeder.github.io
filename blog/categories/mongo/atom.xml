@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: mongo | JazminSchroeder.github.io]]></title>
+  <link href="http://jazminschroeder.github.io/blog/categories/mongo/atom.xml" rel="self"/>
+  <link href="http://jazminschroeder.github.io/"/>
+  <updated>2015-11-29T20:59:33-06:00</updated>
+  <id>http://jazminschroeder.github.io/</id>
+  <author>
+    <name><![CDATA[Jazmin Schroeder]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[Mongo - list all collections]]></title>
+    <link href="http://jazminschroeder.github.io/blog/2014/04/07/mongo-list-all-collections/"/>
+    <updated>2014-04-07T15:40:23-05:00</updated>
+    <id>http://jazminschroeder.github.io/blog/2014/04/07/mongo-list-all-collections</id>
+    <content type="html"><![CDATA[<p><div>
+  <pre><code class='ruby'>&lt;/p&gt;
+
+&lt;blockquote&gt;&lt;p&gt;show dbs
+use my_database
+show collections</code></pre>
+</div>
+</p></blockquote>
+]]></content>
+  </entry>
+  
+</feed>

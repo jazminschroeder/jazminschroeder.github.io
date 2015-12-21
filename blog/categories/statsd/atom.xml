@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: statsd | JazminSchroeder.github.io]]></title>
+  <link href="http://jazminschroeder.github.io/blog/categories/statsd/atom.xml" rel="self"/>
+  <link href="http://jazminschroeder.github.io/"/>
+  <updated>2015-11-29T20:59:33-06:00</updated>
+  <id>http://jazminschroeder.github.io/</id>
+  <author>
+    <name><![CDATA[Jazmin Schroeder]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[Ruby and Statsd]]></title>
+    <link href="http://jazminschroeder.github.io/blog/2015/04/16/ruby-and-statsd/"/>
+    <updated>2015-04-16T15:40:44-05:00</updated>
+    <id>http://jazminschroeder.github.io/blog/2015/04/16/ruby-and-statsd</id>
+    <content type="html"><![CDATA[<h3>Graph everything</h3>
+
+
+<p><a href="Using%20statsd-ruby%20gem">https://github.com/reinh/statsd</a></p>
+
+<p><div>
+  <pre><code class='ruby'>require &amp;lsquo;statsd&amp;rsquo;&lt;/p&gt;
+
+&lt;p&gt;statsd = Statsd.new(&amp;lsquo;localhost&amp;rsquo;, 9125)
+statsd.namespace=&amp;ldquo;some.namespace&amp;rdquo;&lt;/p&gt;
+
+&lt;h1&gt;Sending data&lt;/h1&gt;
+
+&lt;p&gt;statsd.increment &amp;lsquo;foo.bar&amp;rsquo;</code></pre>
+</div>
+</p>
+]]></content>
+  </entry>
+  
+</feed>

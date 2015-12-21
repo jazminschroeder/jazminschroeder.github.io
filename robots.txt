@@ -1,0 +1,4 @@
+User-agent: *
+Disallow: 
+
+Sitemap: http://jazminschroeder.github.io/sitemap.xml 

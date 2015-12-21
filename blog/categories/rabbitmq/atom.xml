@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: rabbitmq | JazminSchroeder.github.io]]></title>
+  <link href="http://jazminschroeder.github.io/blog/categories/rabbitmq/atom.xml" rel="self"/>
+  <link href="http://jazminschroeder.github.io/"/>
+  <updated>2015-11-29T20:59:33-06:00</updated>
+  <id>http://jazminschroeder.github.io/</id>
+  <author>
+    <name><![CDATA[Jazmin Schroeder]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[RabbitMQ from the command line]]></title>
+    <link href="http://jazminschroeder.github.io/blog/2015/01/09/rabbitmq-from-the-command-line/"/>
+    <updated>2015-01-09T13:34:34-06:00</updated>
+    <id>http://jazminschroeder.github.io/blog/2015/01/09/rabbitmq-from-the-command-line</id>
+    <content type="html"><![CDATA[<p><a href="http://www.rabbitmq.com/man/rabbitmqctl.1.man.html">rabbitmqctl</a></p>
+
+<h3>List queues messages and consumers</h3>
+
+
+<p><div>
+  <pre><code class='ruby'>$ sudo rabbitmqctl list_queues name messages consumers&lt;/p&gt;
+
+&lt;p&gt;Listing queues &amp;hellip;
+test.two.queue  0       0
+test.one.queue     0       0&lt;/p&gt;
+
+&lt;p&gt;</code></pre>
+</div>
+</p>
+
+<h3>List exchanges</h3>
+
+
+<p><div>
+  <pre><code class='ruby'>$ sudo rabbitmqctl list_exchanges</code></pre>
+</div>
+</p>
+]]></content>
+  </entry>
+  
+</feed>

@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: cucumber | JazminSchroeder.github.io]]></title>
+  <link href="http://jazminschroeder.github.io/blog/categories/cucumber/atom.xml" rel="self"/>
+  <link href="http://jazminschroeder.github.io/"/>
+  <updated>2015-11-29T20:59:33-06:00</updated>
+  <id>http://jazminschroeder.github.io/</id>
+  <author>
+    <name><![CDATA[Jazmin Schroeder]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[Using tags with cucumber]]></title>
+    <link href="http://jazminschroeder.github.io/blog/2014/06/11/using-tags-with-cucumber/"/>
+    <updated>2014-06-11T22:32:53-05:00</updated>
+    <id>http://jazminschroeder.github.io/blog/2014/06/11/using-tags-with-cucumber</id>
+    <content type="html"><![CDATA[<p><div>
+  <pre><code class='ruby'>@mytag
+Scenario:&lt;/p&gt;
+
+&lt;p&gt;$ cucumber &amp;mdash;tags @mytag&lt;/p&gt;
+
+&lt;p&gt;</code></pre>
+</div>
+</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Cucumber Scenario Outlines]]></title>
+    <link href="http://jazminschroeder.github.io/blog/2014/03/06/cucumber-scenario-outlines/"/>
+    <updated>2014-03-06T15:02:41-06:00</updated>
+    <id>http://jazminschroeder.github.io/blog/2014/03/06/cucumber-scenario-outlines</id>
+    <content type="html"><![CDATA[<p><div>
+  <pre><code class='ruby'>Scenario Outline: Table example
+ Given I have an &amp;ldquo;&lt;option&gt;&amp;rdquo;
+ Then I should see &amp;ldquo;&lt;result&gt;&amp;rdquo;&lt;/p&gt;
+
+&lt;p&gt; Examples:
+   | option   | result   |
+   | option 1 | result 1 |
+   | option 2 | result 2 |</code></pre>
+</div>
+</p>
+]]></content>
+  </entry>
+  
+</feed>

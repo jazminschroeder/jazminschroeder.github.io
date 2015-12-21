@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: mysql | JazminSchroeder.github.io]]></title>
+  <link href="http://jazminschroeder.github.io/blog/categories/mysql/atom.xml" rel="self"/>
+  <link href="http://jazminschroeder.github.io/"/>
+  <updated>2015-11-29T20:59:33-06:00</updated>
+  <id>http://jazminschroeder.github.io/</id>
+  <author>
+    <name><![CDATA[Jazmin Schroeder]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[Mysql query from binary to uuid]]></title>
+    <link href="http://jazminschroeder.github.io/blog/2015/11/17/mysql-query-from-binary-to-uuid/"/>
+    <updated>2015-11-17T14:40:44-06:00</updated>
+    <id>http://jazminschroeder.github.io/blog/2015/11/17/mysql-query-from-binary-to-uuid</id>
+    <content type="html"><![CDATA[<h3>From binary to uuid</h3>
+
+
+<p><div>
+  <pre><code class='ruby'>SELECT
+  LOWER(&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;CONCAT(
+  LEFT(HEX(binary_field), 8),
+  &#39;-&#39;,
+  MID(HEX(binary_field), 9, 4),
+  &#39;-&#39;,
+  MID(HEX(binary_field), 13, 4),
+  &#39;-&#39;,
+  MID(HEX(binary_field), 17, 4),
+  &#39;-&#39;,
+  RIGHT(HEX(binary_field), 12)
+)
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;  ) AS uuid
+FROM some_table</code></pre>
+</div>
+</p>
+]]></content>
+  </entry>
+  
+</feed>
