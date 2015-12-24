@@ -2,7 +2,7 @@
 layout: post
 title: "Mysql query from binary to uuid"
 date: 2015-11-17 15:40:44 -0500
-categories: mysql 
+categories: mysql
 ---
 
 
